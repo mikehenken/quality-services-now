@@ -66,7 +66,13 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
    | **Build command** | `npm run build` |
    | **Build output directory** | `out` |
    | **Root directory** | `/` (leave empty) |
-   | **Environment variables** | None needed |
+   | **Environment variables** | Add this (see below) |
+
+   **Environment Variable to Add:**
+   - Click **"Add variable"** under Environment variables
+   - Name: `NEXT_PUBLIC_WEB3FORMS_KEY`
+   - Value: Get your FREE key from [web3forms.com](https://web3forms.com) using email `EMAIL_REMOVED`
+   - (See [Email Setup Guide](../setup/EMAIL_SETUP.md) for detailed instructions)
 
 4. **Deploy!**
    - Click **"Save and Deploy"**
@@ -168,6 +174,38 @@ If the build fails, check:
 
 - [Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/)
 - [Cloudflare Community](https://community.cloudflare.com/)
+
+---
+
+## 📧 Email Setup for Contact Form
+
+**IMPORTANT:** The contact form needs a FREE email service to send you inquiries.
+
+### Quick Setup (2 minutes):
+
+1. **Get your FREE Web3Forms API key:**
+   - Go to https://web3forms.com
+   - Enter your email: `EMAIL_REMOVED`
+   - Click "Get Access Key"
+   - Check your email and copy the key
+
+2. **Add to Cloudflare Pages:**
+   - In your Cloudflare Pages dashboard, go to your project
+   - Navigate to **Settings** → **Environment variables**
+   - Click **"Add variable"**
+     - Name: `NEXT_PUBLIC_WEB3FORMS_KEY`
+     - Value: [paste your Web3Forms key]
+     - Environment: Select **Production**
+   - Click **Save**
+
+3. **Redeploy:**
+   - Go to the **Deployments** tab
+   - Click "Retry deployment" on the latest deployment
+   - Wait 2-3 minutes
+
+**Done!** All contact form submissions will now be sent to `EMAIL_REMOVED`
+
+📖 **[Full Email Setup Guide](../setup/EMAIL_SETUP.md)**
 
 ---
 

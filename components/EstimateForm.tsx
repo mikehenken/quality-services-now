@@ -21,22 +21,50 @@ export default function EstimateForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        address: "",
-        service: "",
-        message: "",
+    try {
+      // Submit to Web3Forms API (free email service)
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "WEB3FORMS_KEY_REMOVED",
+          subject: "New Estimate Request - KD's Pressure Washing",
+          from_name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          service: formData.service,
+          message: formData.message,
+        }),
       });
 
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1500);
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          address: "",
+          service: "",
+          message: "",
+        });
+
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        alert("Failed to send message. Please try again or call us directly.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Failed to send message. Please try again or call us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -89,10 +117,10 @@ export default function EstimateForm() {
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
                     <a
-                      href="tel:+12395551234"
+                      href="tel:+12396922083"
                       className="text-white/90 hover:text-white transition-colors text-lg"
                     >
-                      (239) 555-1234
+                      (239) 692-2083
                     </a>
                   </div>
                 </div>
@@ -206,7 +234,7 @@ export default function EstimateForm() {
                           onChange={handleChange}
                           required
                           className="w-full pl-11 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
-                          placeholder="(239) 555-1234"
+                          placeholder="(239) 692-2083"
                         />
                       </div>
                     </div>

@@ -58,14 +58,17 @@ Deploy to Cloudflare Pages in minutes - **completely free** with automatic deplo
      - Framework: `Next.js (Static HTML Export)`
      - Build command: `npm run build`
      - Build output: `out`
+     - Environment variable: `NEXT_PUBLIC_WEB3FORMS_KEY` (get FREE key from [web3forms.com](https://web3forms.com))
    - Click "Save and Deploy"
 
 3. **Done!** Your site is live at `https://kds-pressure-washing.pages.dev`
    - FREE permanent URL - no domain purchase needed!
    - Includes SSL certificate (HTTPS)
+   - Contact form sends to `EMAIL_REMOVED`
    - Add a custom domain later (optional)
 
-📖 **[Full Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**
+📖 **[Full Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**  
+📧 **[Email Setup Guide](docs/setup/EMAIL_SETUP.md)**
 
 ---
 
@@ -130,7 +133,7 @@ roe/
 ## Contact
 
 **KD's Pressure Washing & Services**
-- Phone: (239) 555-1234
+- Phone: (239) 692-2083
 - Email: info@kdspressurewashing.com
 - Location: Lehigh Acres, FL
 
