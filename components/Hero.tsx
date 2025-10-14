@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Search, MapPin, Phone, Star, Building2, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -156,6 +156,7 @@ const areaData: Record<string, AreaData> = {
 export default function Hero() {
   const [zipCode, setZipCode] = useState("");
   const [selectedArea, setSelectedArea] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const detectArea = (input: string): string | null => {
     const lowerInput = input.toLowerCase().trim();
@@ -214,6 +215,25 @@ export default function Hero() {
     }
   };
 
+  // Scroll to container when area is selected
+  useEffect(() => {
+    if (selectedArea && containerRef.current) {
+      // Small delay to allow animation to start
+      setTimeout(() => {
+        const element = containerRef.current;
+        if (element) {
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - 100; // 100px space from edge (accounts for header + spacing)
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+  }, [selectedArea]);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image with Overlay */}
@@ -235,7 +255,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block bg-green-600/90 text-white px-4 py-2 rounded-full font-semibold text-sm mb-4 backdrop-blur-sm">
+            <div className="inline-block bg-green-600/90 text-white px-4 py-2 rounded-full font-semibold text-sm mb-6 backdrop-blur-sm">
               🤝 Proud Black-Owned Business
             </div>
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
@@ -248,6 +268,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
+            ref={containerRef}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
