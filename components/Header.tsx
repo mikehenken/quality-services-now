@@ -44,6 +44,7 @@ export default function Header() {
               <div className="text-sm text-gray-600 flex items-center gap-1">
                 <MapPin className="w-3 h-3" />
                 <span>Lehigh Acres, FL</span>
+                <span className="ml-2 px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-semibold">Black-Owned</span>
               </div>
             </div>
           </div>
@@ -64,11 +65,11 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+12395551234"
+              href="tel:+12396922083"
               className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-semibold">(239) 555-1234</span>
+              <span className="font-semibold">(239) 692-2083</span>
             </a>
             <a
               href="#estimate"
@@ -106,11 +107,11 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="tel:+12395551234"
+                href="tel:+12396922083"
                 className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors py-2"
               >
                 <Phone className="w-5 h-5" />
-                <span className="font-semibold">(239) 555-1234</span>
+                <span className="font-semibold">(239) 692-2083</span>
               </a>
               <a
                 href="#estimate"

@@ -19,8 +19,8 @@ export default function WhyUs() {
     },
     {
       icon: Users,
-      title: "Fully Trained Team",
-      description: "Experienced professionals committed to excellence and customer satisfaction",
+      title: "Black-Owned & Community-Focused",
+      description: "Supporting local entrepreneurs while delivering excellence and building lasting relationships in SWFL",
     },
     {
       icon: DollarSign,

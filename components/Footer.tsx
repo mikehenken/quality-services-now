@@ -19,6 +19,9 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Professional pressure washing, painting, and restoration services across Southwest Florida.
             </p>
+            <div className="inline-block bg-gradient-to-r from-green-600 to-green-700 text-white px-3 py-1.5 rounded-lg font-semibold text-sm mb-4">
+              🤝 Proud Black-Owned Business
+            </div>
             <div className="flex gap-4">
               <a
                 href="https://facebook.com"
@@ -127,10 +130,10 @@ export default function Footer() {
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
                   <a
-                    href="tel:+12395551234"
+                    href="tel:+12396922083"
                     className="hover:text-white transition-colors"
                   >
-                    (239) 555-1234
+                    (239) 692-2083
                   </a>
                 </div>
               </li>
@@ -172,7 +175,7 @@ export default function Footer() {
             © {currentYear} KD's Pressure Washing & Services. All rights reserved.
           </p>
           <p className="mt-2">
-            Licensed & Insured | Serving Southwest Florida with Pride
+            Licensed & Insured | Proud Black-Owned Business | Serving Southwest Florida with Pride
           </p>
         </div>
       </div>

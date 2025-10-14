@@ -22,7 +22,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1920&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=1920&q=80')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-600/60" />
@@ -36,6 +36,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <div className="inline-block bg-green-600/90 text-white px-4 py-2 rounded-full font-semibold text-sm mb-4 backdrop-blur-sm">
+              🤝 Proud Black-Owned Business
+            </div>
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Transform Your Property's{" "}
               <span className="text-accent-400">Appearance</span>
@@ -91,11 +94,11 @@ export default function Hero() {
               Get Free Estimate
             </a>
             <a
-              href="tel:+12395551234"
+              href="tel:+12396922083"
               className="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 justify-center w-full sm:w-auto"
             >
               <Phone className="w-5 h-5" />
-              <span>(239) 555-1234</span>
+              <span>(239) 692-2083</span>
             </a>
           </motion.div>
         </div>

@@ -9,37 +9,37 @@ export default function Reviews() {
 
   const reviews = [
     {
-      name: "Sarah M.",
+      name: "Marcus J.",
       location: "Fort Myers, FL",
       rating: 5,
       text: "KD's team did an amazing job pressure washing our driveway and house. It looks brand new! They were professional, on time, and the pricing was very fair. Highly recommend!",
     },
     {
-      name: "Michael R.",
+      name: "Jasmine W.",
       location: "Naples, FL",
       rating: 5,
       text: "We hired KD's for both exterior painting and pressure washing. The transformation is incredible! Our home's curb appeal has never been better. Great attention to detail.",
     },
     {
-      name: "Jennifer L.",
+      name: "DeAndre L.",
       location: "Lehigh Acres, FL",
       rating: 5,
       text: "Best service I've had in years! They were thorough, careful with our landscaping, and cleaned up everything perfectly. The results speak for themselves. Will definitely use them again.",
     },
     {
-      name: "David K.",
+      name: "Aaliyah T.",
       location: "Bonita Springs, FL",
       rating: 5,
       text: "Professional from start to finish. Free estimate was detailed and accurate. The crew was courteous and did exceptional work on our commercial building. Very impressed!",
     },
     {
-      name: "Maria G.",
+      name: "Carlos M.",
       location: "Estero, FL",
       rating: 5,
       text: "KD's painted our entire house interior and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule. Worth every penny!",
     },
     {
-      name: "Robert T.",
+      name: "Tyrone K.",
       location: "Punta Gorda, FL",
       rating: 5,
       text: "Outstanding pressure washing service! Removed years of buildup from our patio and pool deck. They also cleaned our roof - looks amazing. Couldn't be happier with the results.",
