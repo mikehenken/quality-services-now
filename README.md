@@ -44,31 +44,8 @@ A modern, professional marketing website for KD's Pressure Washing & Services, b
 
 Deploy to Cloudflare Pages in minutes - **completely free** with automatic deployments!
 
-### One-Click Deployment Steps:
-
-1. **Push to GitHub:**
-   ```bash
-   gh repo create kds-pressure-washing --public --source=. --remote=origin --push
-   ```
-
-2. **Go to [Cloudflare Pages](https://dash.cloudflare.com/pages)**
-   - Click "Create a project"
-   - Connect your GitHub repository
-   - Use these settings:
-     - Framework: `Next.js (Static HTML Export)`
-     - Build command: `npm run build`
-     - Build output: `out`
-     - Environment variable: `NEXT_PUBLIC_WEB3FORMS_KEY` (get FREE key from [web3forms.com](https://web3forms.com))
-   - Click "Save and Deploy"
-
-3. **Done!** Your site is live at `https://kds-pressure-washing.pages.dev`
-   - FREE permanent URL - no domain purchase needed!
-   - Includes SSL certificate (HTTPS)
-   - Contact form sends to `EMAIL_REMOVED`
-   - Add a custom domain later (optional)
-
-📖 **[Full Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**  
-📧 **[Email Setup Guide](docs/setup/EMAIL_SETUP.md)**
+**📖 [Complete Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**
+**⚡ [3-Minute Quick Start](docs/setup/QUICK_START.md)**
 
 ---
 
@@ -129,6 +106,10 @@ roe/
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
+
+## 📚 Documentation
+
+**📖 [Complete Documentation Index](docs/DOCS_INDEX.md)** - All guides, setup instructions, and project information
 
 ## Contact
 
