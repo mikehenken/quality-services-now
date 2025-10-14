@@ -44,6 +44,18 @@ A modern, professional marketing website for KD's Pressure Washing & Services, b
 
 Deploy to Cloudflare Pages in minutes - **completely free** with automatic deployments!
 
+### Secure One-Command Deploy
+
+```bash
+./deploy.sh
+```
+
+This script automatically:
+- 🔒 Scans for API key leaks before pushing
+- 📦 Commits and pushes to GitHub
+- 🚀 Triggers Cloudflare Pages deployment
+
+**📖 [Secure Deployment Guide](docs/deployment/SECURE_DEPLOYMENT.md)** ← **Recommended**
 **📖 [Complete Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**
 **⚡ [3-Minute Quick Start](docs/setup/QUICK_START.md)**
 

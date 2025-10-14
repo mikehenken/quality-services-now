@@ -248,7 +248,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20">
+      <div className="relative z-10 container mx-auto px-4 pt-8 pb-16 md:pt-6 md:pb-12">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -450,7 +450,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
       >
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
           <motion.div

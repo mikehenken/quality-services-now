@@ -79,7 +79,7 @@ async function setupCloudflare() {
         `${API_BASE}/accounts/${ACCOUNT_ID}/pages/projects/${project.id}/deployments/${project.latest_deployment?.id || 'production'}/env-vars`,
         {
           key: 'NEXT_PUBLIC_WEB3FORMS_KEY',
-          value: 'WEB3FORMS_KEY_REMOVED',
+          value: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '',
           type: 'plain_text'
         },
         {
@@ -93,7 +93,7 @@ async function setupCloudflare() {
         console.log('\n📧 Test it by:');
         console.log('   1. Going to your live site');
         console.log('   2. Filling out the contact form');
-        console.log('   3. Checking EMAIL_REMOVED for the email');
+        console.log(`   3. Checking ${process.env.CONTACT_EMAIL || 'your email'} for the email`);
 
         // Show which method worked
         console.log(`\n✅ Used authentication method: ${method.type}`);
@@ -118,7 +118,7 @@ async function setupCloudflare() {
   console.log('\n📋 Please add the environment variable manually:');
   console.log('   https://dash.cloudflare.com/pages → Your Project → Settings → Environment variables');
   console.log('   Name: NEXT_PUBLIC_WEB3FORMS_KEY');
-  console.log('   Value: WEB3FORMS_KEY_REMOVED');
+  console.log(`   Value: ${process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'your_web3forms_key'}`);
 }
 
 setupCloudflare();

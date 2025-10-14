@@ -12,7 +12,8 @@ async function addEnvironmentVariable() {
   try {
     const page = await browser.newPage();
 
-    console.log('\n📋 Your API Key:', 'WEB3FORMS_KEY_REMOVED');
+    const web3formsKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'your_web3forms_key';
+    console.log('\n📋 Your API Key:', web3formsKey);
 
     console.log('\n🔧 Manual Steps (since I need your login):');
     console.log('1. Go to: https://dash.cloudflare.com/pages');
@@ -20,7 +21,7 @@ async function addEnvironmentVariable() {
     console.log('3. Go to Settings → Environment variables');
     console.log('4. Click "Add variable"');
     console.log('   - Name: NEXT_PUBLIC_WEB3FORMS_KEY');
-    console.log('   - Value: WEB3FORMS_KEY_REMOVED');
+    console.log(`   - Value: ${web3formsKey}`);
     console.log('   - Environment: Production');
     console.log('5. Click Save');
     console.log('6. Go to Deployments tab');

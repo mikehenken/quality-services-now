@@ -3,21 +3,22 @@
 ## Worker Representation (6 people shown)
 
 ### Diversity Breakdown:
-- **Hispanic/Mexican**: 2 people (33%)
+- **Hispanic/Mexican**: 2 people (29%)
   - Male pressure washing worker
   - Female technician with equipment
   
-- **Black**: 2 people (33%)
+- **Black**: 3 people (43%)
   - Female exterior painter
   - Male painter with paint systems
+  - Female concrete cleaning worker
   
-- **White**: 2 people (33%)
+- **White**: 2 people (29%)
   - Male interior painter
   - Male with pressure washer equipment
 
 ### Gender Balance:
-- **Women**: 2 (33%)
-- **Men**: 4 (67%)
+- **Women**: 3 (43%)
+- **Men**: 4 (57%)
 
 ## Authenticity Features
 
@@ -64,15 +65,15 @@ These show the results of services:
 1. **Pressure Washing** - Hispanic male (sweaty, dirty shirt, candid)
 2. **Exterior Painting** - Black female (paint-stained, focused on work)
 3. **Interior Painting** - White male (messy from painting, candid)
-4. **Commercial Painting** - Mexican male (paint stains, sweaty)
-5. **Toolkit: Pressure Washer** - White male (damp clothes, side angle)
-6. **Toolkit: Paint Systems** - Black male (paint on clothes, organizing)
-7. **Toolkit: Specialized Equipment** - Hispanic female (damp, examining tools)
+4. **Concrete Cleaning** - Black female (sweaty, power washing half-cleaned driveway, dramatic before/after)
+5. **Commercial Painting** - Mexican male (paint stains, sweaty)
+6. **Toolkit: Pressure Washer** - White male (damp clothes, side angle)
+7. **Toolkit: Paint Systems** - Black male (paint on clothes, organizing)
+8. **Toolkit: Specialized Equipment** - Hispanic female (damp, examining tools)
 
 ### Without People (Property Results):
-8. House Washing
-9. Fence & Deck Staining
-10. Concrete Cleaning
+9. House Washing
+10. Fence & Deck Staining
 11. Building Washing
 12. Warehouse Cleaning
 13. Parking Lot Cleaning

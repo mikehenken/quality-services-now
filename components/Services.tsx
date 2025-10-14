@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Droplets,
@@ -15,84 +15,114 @@ import {
 
 export default function Services() {
   const [activeTab, setActiveTab] = useState<"residential" | "commercial">("residential");
+  const [imageVersion, setImageVersion] = useState("current");
 
-  const residentialServices = [
-    {
-      icon: Droplets,
-      title: "Pressure Washing",
-      description: "Deep clean driveways, patios, decks, and siding with professional-grade equipment",
-      image: "/service-images/service-pressure-washing.jpg",
-    },
-    {
-      icon: Home,
-      title: "House Washing",
-      description: "Gentle soft-wash system that protects your siding while removing dirt and mildew",
-      image: "/service-images/service-house-washing.jpg",
-    },
+  // Get image version from URL parameter (?images=v1 or ?images=v2)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const version = params.get("images") || "current";
+      setImageVersion(version);
+    }
+  }, []);
+
+  // Helper to get versioned image path
+  const getImagePath = (basePath: string) => {
+    if (imageVersion === "current") {
+      return basePath;
+    }
+    // For versioned images: /service-images/v1/service-pressure-washing.jpg
+    return basePath.replace("/service-images/", `/service-images/${imageVersion}/`);
+  };
+
+  const residentialServicesBase = [
     {
       icon: PaintBucket,
       title: "Exterior Painting",
       description: "Transform your home's curb appeal with professional painting services",
-      image: "/service-images/service-exterior-painting.jpg",
-    },
-    {
-      icon: Sparkles,
-      title: "Interior Painting",
-      description: "Refresh any room with expert interior painting and finishing",
-      image: "/service-images/service-interior-painting.jpg",
-    },
-    {
-      icon: Fence,
-      title: "Fence & Deck Staining",
-      description: "Protect and beautify your outdoor wood surfaces with quality stains",
-      image: "/service-images/service-fence-deck-staining.jpg",
+      imagePath: "/service-images/service-exterior-painting.jpg",
     },
     {
       icon: TreePine,
       title: "Concrete Cleaning",
       description: "Remove stubborn stains and restore your concrete surfaces to like-new condition",
-      image: "/service-images/service-concrete-cleaning.jpg",
+      imagePath: "/service-images/service-concrete-cleaning.jpg",
+    },
+    {
+      icon: Droplets,
+      title: "Pressure Washing",
+      description: "Deep clean driveways, patios, decks, and siding with professional-grade equipment",
+      imagePath: "/service-images/service-pressure-washing.jpg",
+    },
+    {
+      icon: Sparkles,
+      title: "Interior Painting",
+      description: "Refresh any room with expert interior painting and finishing",
+      imagePath: "/service-images/service-interior-painting.jpg",
+    },
+    {
+      icon: Home,
+      title: "House Washing",
+      description: "Gentle soft-wash system that protects your siding while removing dirt and mildew",
+      imagePath: "/service-images/service-house-washing.jpg",
+    },
+    {
+      icon: Fence,
+      title: "Fence & Deck Staining",
+      description: "Protect and beautify your outdoor wood surfaces with quality stains",
+      imagePath: "/service-images/service-fence-deck-staining.jpg",
     },
   ];
 
-  const commercialServices = [
+  const commercialServicesBase = [
     {
       icon: Building2,
       title: "Building Washing",
       description: "Keep your commercial property looking professional and inviting",
-      image: "/service-images/service-building-washing.jpg",
+      imagePath: "/service-images/service-building-washing.jpg",
     },
     {
       icon: Warehouse,
       title: "Warehouse Cleaning",
       description: "Industrial-grade cleaning for warehouses and large facilities",
-      image: "/service-images/service-warehouse-cleaning.jpg",
+      imagePath: "/service-images/service-warehouse-cleaning.jpg",
     },
     {
       icon: Droplets,
       title: "Parking Lot Cleaning",
       description: "Pressure wash parking lots, walkways, and entry areas",
-      image: "/service-images/service-parking-lot.jpg",
+      imagePath: "/service-images/service-parking-lot.jpg",
     },
     {
       icon: PaintBucket,
       title: "Commercial Painting",
       description: "Professional painting services for offices, retail spaces, and more",
-      image: "/service-images/service-commercial-painting.jpg",
+      imagePath: "/service-images/service-commercial-painting.jpg",
     },
     {
       icon: Sparkles,
       title: "Storefront Restoration",
       description: "Revitalize your storefront to attract more customers",
-      image: "/service-images/service-storefront.jpg",
+      imagePath: "/service-images/service-storefront.jpg",
     },
     {
       icon: Home,
       title: "HOA Services",
       description: "Comprehensive cleaning and maintenance for HOA communities",
-      image: "/service-images/service-hoa.jpg",
+      imagePath: "/service-images/service-hoa.jpg",
     },
   ];
+
+  // Apply versioned image paths
+  const residentialServices = residentialServicesBase.map(service => ({
+    ...service,
+    image: getImagePath(service.imagePath)
+  }));
+
+  const commercialServices = commercialServicesBase.map(service => ({
+    ...service,
+    image: getImagePath(service.imagePath)
+  }));
 
   const services = activeTab === "residential" ? residentialServices : commercialServices;
 

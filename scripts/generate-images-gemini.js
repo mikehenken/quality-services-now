@@ -8,8 +8,24 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
+// Load .env file
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf8');
+  envContent.split('\n').forEach(line => {
+    const match = line.match(/^([^=:#]+)=(.*)$/);
+    if (match) {
+      const key = match[1].trim();
+      const value = match[2].trim();
+      if (!process.env[key]) {
+        process.env[key] = value;
+      }
+    }
+  });
+}
+
 // Google API Key - Get from: https://makersuite.google.com/app/apikey
-const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || 'YOUR_API_KEY_HERE';
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || '';
 
 const serviceImages = [
   // RESIDENTIAL SERVICES
@@ -41,7 +57,7 @@ const serviceImages = [
   {
     filename: 'service-concrete-cleaning',
     title: 'Concrete Cleaning',
-    prompt: 'Natural photo showing dramatically clean concrete driveway in Florida. Clean light gray concrete surface, residential driveway leading to house, palm trees visible, single-family home in background, sunny day. Authentic concrete cleaning result, casual photo angle, real property photo. No people visible.',
+    prompt: 'Natural candid smartphone photo of a Black woman actively power washing a concrete driveway in Florida, shot from medium distance showing both worker and driveway. Worker in slightly damp work clothes and t-shirt, hair tied back, sweaty from outdoor work, focused on pressure washing not looking at camera, holding professional pressure washer wand with visible water spray. Driveway is HALF CLEANED - left side still dirty with dark stains and grime, right side already cleaned showing light gray concrete, clear dramatic contrast between dirty and clean halves. Single-story house in background, palm trees, bright sunny day. Worker showing signs of real work - perspiration visible, clothes damp from water spray. Authentic work in progress photo, smartphone camera quality, natural outdoor lighting. Real person doing real work, dramatic before/after visible in same shot.',
   },
 
   // COMMERCIAL SERVICES
@@ -95,74 +111,48 @@ const serviceImages = [
   {
     filename: 'toolkit-specialized-equipment',
     title: 'Specialized Equipment',
-    prompt: 'Candid photo of a Hispanic woman technician holding pressure washing accessories in Florida, photographed from side angle. Worker in work clothes slightly damp from water spray, examining or adjusting surface cleaner attachment and nozzles, not looking at camera. Extension wands and various professional tools visible, palm trees and house in background. Worker with hair tied back, showing real work conditions. Natural work photo, authentic equipment display, smartphone camera quality.',
+    prompt: 'Candid smartphone photo of a Hispanic woman technician with pressure washing equipment in Florida, photographed from medium distance. Single worker in work clothes slightly damp from water spray, holding a surface cleaner tool in her hands, standing next to extension poles leaning against house wall. Palm trees and single-story house in background, bright sunny day. Worker has hair tied back in ponytail, looking down at equipment not at camera, showing real work conditions. Natural work photo, authentic equipment display, slightly grainy phone camera quality. One person only, two hands visible holding equipment.',
   },
 ];
 
-async function generateImageWithGemini(imageData) {
+async function generateImageWithPollinations(imageData) {
   try {
     console.log(`\n🎨 Generating: ${imageData.title}`);
     console.log(`   File: ${imageData.filename}.jpg`);
     
-    // Using Imagen 3 via Gemini API
-    const response = await axios.post(
-      `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${GOOGLE_API_KEY}`,
-      {
-        instances: [{
-          prompt: imageData.prompt
-        }],
-        parameters: {
-          sampleCount: 1,
-          aspectRatio: '3:2',
-          safetyFilterLevel: 'block_few',
-          personGeneration: 'allow_adult',
-          // Use lower guidance for more natural results
-          guidanceScale: 15,
-        }
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        timeout: 60000
-      }
-    );
+    const encodedPrompt = encodeURIComponent(imageData.prompt);
     
-    if (response.data && response.data.predictions && response.data.predictions.length > 0) {
-      const imageBase64 = response.data.predictions[0].bytesBase64Encoded;
-      const imageBuffer = Buffer.from(imageBase64, 'base64');
-      
-      const outputPath = path.join(__dirname, '..', 'public', 'service-images', `${imageData.filename}.jpg`);
-      fs.writeFileSync(outputPath, imageBuffer);
-      
-      console.log(`   ✅ Saved!`);
-      return { success: true, filename: imageData.filename };
-    } else {
-      throw new Error('No image data in response');
-    }
+    // Using lower quality settings to make it look more natural/less AI
+    const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1200&height=800&nologo=true&model=flux&enhance=false`;
+    
+    console.log('   📥 Downloading...');
+    
+    const response = await axios.get(imageUrl, {
+      responseType: 'arraybuffer',
+      timeout: 120000
+    });
+    
+    const outputPath = path.join(__dirname, '..', 'public', 'service-images', `${imageData.filename}.jpg`);
+    fs.writeFileSync(outputPath, response.data);
+    
+    console.log(`   ✅ Saved!`);
+    return { success: true, filename: imageData.filename };
     
   } catch (error) {
-    console.error(`   ❌ Error: ${error.response?.data?.error?.message || error.message}`);
+    console.error(`   ❌ Error: ${error.message}`);
     return { success: false, filename: imageData.filename, error: error.message };
   }
 }
 
 async function generateAllImages() {
   console.log('=' .repeat(70));
-  console.log('🚀 GENERATING IMAGES WITH GOOGLE GEMINI (IMAGEN 3)');
+  console.log('🚀 GENERATING DIVERSE SERVICE IMAGES');
   console.log('=' .repeat(70));
   
-  if (!GOOGLE_API_KEY || GOOGLE_API_KEY === 'YOUR_API_KEY_HERE') {
-    console.error('\n❌ ERROR: GOOGLE_API_KEY not set!');
-    console.log('\n📝 To fix this:');
-    console.log('   1. Get API key: https://makersuite.google.com/app/apikey');
-    console.log('   2. Set environment variable: export GOOGLE_API_KEY="your-key-here"');
-    console.log('   3. Or edit this file and replace YOUR_API_KEY_HERE\n');
-    process.exit(1);
-  }
-  
   console.log(`\n📸 Total images to generate: ${serviceImages.length}`);
-  console.log('🤖 Model: Imagen 3');
+  console.log('🤖 Generator: Pollinations.ai (Flux model)');
+  console.log('👥 Diversity: Hispanic, Black, White | Women & Men');
+  console.log('🎯 Quality: Natural, candid, authentic work photos');
   console.log('=' .repeat(70));
   
   // Create output directory
@@ -179,7 +169,7 @@ async function generateAllImages() {
     console.log(`\n[${i + 1}/${serviceImages.length}] Processing: ${imageData.title}`);
     console.log('-'.repeat(70));
     
-    const result = await generateImageWithGemini(imageData);
+    const result = await generateImageWithPollinations(imageData);
     results.push(result);
     
     // Delay between requests to avoid rate limiting

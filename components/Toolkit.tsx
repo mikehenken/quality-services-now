@@ -1,35 +1,62 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Wrench, Droplets, PaintBucket, Sparkles } from "lucide-react";
 
 export default function Toolkit() {
-  const tools = [
-    {
-      icon: Droplets,
-      title: "Professional Pressure Washers",
-      description: "Adjustable high-grade equipment perfect for any surface type - from delicate siding to tough concrete",
-      image: "/service-images/toolkit-pressure-washer.jpg",
-    },
+  const [imageVersion, setImageVersion] = useState("current");
+
+  // Get image version from URL parameter (?images=v1 or ?images=v2)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const version = params.get("images") || "current";
+      setImageVersion(version);
+    }
+  }, []);
+
+  // Helper to get versioned image path
+  const getImagePath = (basePath: string) => {
+    if (imageVersion === "current") {
+      return basePath;
+    }
+    // For versioned images: /service-images/v1/toolkit-pressure-washer.jpg
+    return basePath.replace("/service-images/", `/service-images/${imageVersion}/`);
+  };
+
+  const toolsBase = [
     {
       icon: PaintBucket,
       title: "Premium Paint Systems",
       description: "Top-quality paints and application tools for flawless, long-lasting finishes",
-      image: "/service-images/toolkit-paint-systems.jpg",
+      imagePath: "/service-images/toolkit-paint-systems.jpg",
     },
     {
-      icon: Sparkles,
-      title: "Soft Wash Technology",
-      description: "Low-pressure cleaning that's tough on dirt but gentle on your property",
-      image: "/service-images/toolkit-soft-wash.jpg",
+      icon: Droplets,
+      title: "Professional Pressure Washers",
+      description: "Adjustable high-grade equipment perfect for any surface type - from delicate siding to tough concrete",
+      imagePath: "/service-images/toolkit-pressure-washer.jpg",
     },
     {
       icon: Wrench,
       title: "Specialized Equipment",
       description: "Extension poles, surface cleaners, and specialized nozzles for every job",
-      image: "/service-images/toolkit-specialized-equipment.jpg",
+      imagePath: "/service-images/toolkit-specialized-equipment.jpg",
+    },
+    {
+      icon: Sparkles,
+      title: "Soft Wash Technology",
+      description: "Low-pressure cleaning that's tough on dirt but gentle on your property",
+      imagePath: "/service-images/toolkit-soft-wash.jpg",
     },
   ];
+
+  // Apply versioned image paths
+  const tools = toolsBase.map(tool => ({
+    ...tool,
+    image: getImagePath(tool.imagePath)
+  }));
 
   return (
     <section className="py-20 bg-gray-50">

@@ -11,9 +11,13 @@ Welcome to the KD's Pressure Washing & Services documentation. This index organi
 ## 📁 Documentation Categories
 
 ### ⚙️ Setup & Configuration
+- **[ENVIRONMENT_VARIABLES.md](setup/ENVIRONMENT_VARIABLES.md)** - Environment variables setup guide
+- **[DEPLOY_REFERENCE.md](deployment/DEPLOY_REFERENCE.md)** - Quick reference card for deployment commands
+- **[SECURE_DEPLOYMENT.md](deployment/SECURE_DEPLOYMENT.md)** - **Recommended: Secure deployment with API key leak detection**
 - **[CLOUDFLARE_DEPLOYMENT.md](deployment/CLOUDFLARE_DEPLOYMENT.md)** - Complete deployment guide
 - **[QUICK_START.md](setup/QUICK_START.md)** - Fast deployment in 3 steps
 - **[DEPLOYMENT.md](setup/DEPLOYMENT.md)** - Alternative deployment methods
+- **[EMAIL_SETUP.md](setup/EMAIL_SETUP.md)** - Web3Forms email setup
 - **[GEMINI_IMAGE_SETUP.md](guides/GEMINI_IMAGE_SETUP.md)** - Google AI image generation setup
 
 ### 🔧 Development & Workflow

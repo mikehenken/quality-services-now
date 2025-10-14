@@ -59,8 +59,8 @@ const serviceImages = [
   {
     filename: 'service-concrete-cleaning',
     title: 'Concrete Cleaning',
-    prompt: 'Natural photo showing dramatically clean concrete driveway in Florida. Clean light gray concrete surface, residential driveway leading to house, palm trees visible, single-family home in background, sunny day. Authentic concrete cleaning result, casual photo angle, real property photo. No people visible.',
-    negativePrompt: 'dirty concrete, stained surface, professional photography, people',
+    prompt: 'Natural candid smartphone photo of a Black woman actively power washing a concrete driveway in Florida, shot from medium distance showing both worker and driveway. Worker in slightly damp work clothes and t-shirt, hair tied back, sweaty from outdoor work, focused on pressure washing not looking at camera, holding professional pressure washer wand with visible water spray. Driveway is HALF CLEANED - left side still dirty with dark stains and grime, right side already cleaned showing light gray concrete, clear dramatic contrast between dirty and clean halves. Single-story house in background, palm trees, bright sunny day. Worker showing signs of real work - perspiration visible, clothes damp from water spray. Authentic work in progress photo, smartphone camera quality, natural outdoor lighting. Real person doing real work, dramatic before/after visible in same shot.',
+    negativePrompt: 'professional photography, stock photo, staged, perfect lighting, studio quality, looking at camera, clean clothes, shiny skin, completely clean driveway, completely dirty driveway, zoomed in too close',
   },
 
   // COMMERCIAL SERVICES

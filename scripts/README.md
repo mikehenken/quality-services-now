@@ -2,6 +2,21 @@
 
 Scripts for generating logos using Google Vertex AI Imagen.
 
+---
+
+## ⚡ QUICK START
+
+**Your project is already configured!** Just run:
+
+```bash
+cd /home/mikeh/Projects/roe/scripts
+./run-logo-generator.sh
+```
+
+See **[START_HERE.md](START_HERE.md)** for the simplest instructions!
+
+---
+
 ## Prerequisites
 
 1. **Google Cloud Project with Vertex AI enabled**

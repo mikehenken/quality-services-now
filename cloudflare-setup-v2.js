@@ -74,7 +74,7 @@ async function setupCloudflare() {
                 env_vars: {
                   NEXT_PUBLIC_WEB3FORMS_KEY: {
                     type: 'plain_text',
-                    value: 'WEB3FORMS_KEY_REMOVED'
+                    value: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ''
                   }
                 }
               }
@@ -94,7 +94,7 @@ async function setupCloudflare() {
           console.log('\n📧 Test it by:');
           console.log('   1. Going to your live site');
           console.log('   2. Filling out the contact form');
-          console.log('   3. Checking EMAIL_REMOVED for the email');
+          console.log(`   3. Checking ${process.env.CONTACT_EMAIL || 'your email'} for the email`);
           return;
         }
       } catch (envError) {
@@ -107,7 +107,7 @@ async function setupCloudflare() {
       console.log(`1. Go to: https://dash.cloudflare.com/${account.id}/pages/view/${project.name}/settings/environment-variables`);
       console.log('2. Click "Add variable"');
       console.log('   Name: NEXT_PUBLIC_WEB3FORMS_KEY');
-      console.log('   Value: WEB3FORMS_KEY_REMOVED');
+      console.log(`   Value: ${process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'your_web3forms_key'}`);
       console.log('   Environment: Production');
       console.log('3. Click Save');
       console.log('4. Redeploy your site');
@@ -129,7 +129,7 @@ async function setupCloudflare() {
   console.log('📋 Please add the environment variable manually:');
   console.log('   https://dash.cloudflare.com/pages → Your Project → Settings → Environment variables');
   console.log('   Name: NEXT_PUBLIC_WEB3FORMS_KEY');
-  console.log('   Value: WEB3FORMS_KEY_REMOVED');
+  console.log(`   Value: ${process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'your_web3forms_key'}`);
 }
 
 setupCloudflare();

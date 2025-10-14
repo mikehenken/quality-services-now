@@ -7,7 +7,7 @@ The contact form uses **Web3Forms** - a completely FREE service that sends form 
 ### Step 1: Get Your FREE API Key
 
 1. Go to https://web3forms.com
-2. Enter your email: `EMAIL_REMOVED`
+2. Enter your email address
 3. Click "Get Access Key"
 4. Check your email and copy the access key
 
@@ -27,7 +27,7 @@ If your site is already live:
 1. Go to **Deployments** tab
 2. Click "Retry deployment" on the latest deployment
 
-**That's it!** All form submissions will now be sent to `EMAIL_REMOVED`
+**That's it!** All form submissions will now be sent to your email address
 
 ---
 

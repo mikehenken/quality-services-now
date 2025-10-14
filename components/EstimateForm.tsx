@@ -30,7 +30,7 @@ export default function EstimateForm() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "WEB3FORMS_KEY_REMOVED",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "",
           subject: "New Estimate Request - KD's Pressure Washing",
           from_name: formData.name,
           email: formData.email,
