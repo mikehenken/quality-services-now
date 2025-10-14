@@ -40,7 +40,33 @@ A modern, professional marketing website for KD's Pressure Washing & Services, b
 - Bonita Springs, FL
 - Punta Gorda, FL
 
-## Getting Started
+## 🚀 Quick Deploy (FREE)
+
+Deploy to Cloudflare Pages in minutes - **completely free** with automatic deployments!
+
+### One-Click Deployment Steps:
+
+1. **Push to GitHub:**
+   ```bash
+   gh repo create kds-pressure-washing --public --source=. --remote=origin --push
+   ```
+
+2. **Go to [Cloudflare Pages](https://dash.cloudflare.com/pages)**
+   - Click "Create a project"
+   - Connect your GitHub repository
+   - Use these settings:
+     - Framework: `Next.js (Static HTML Export)`
+     - Build command: `npm run build`
+     - Build output: `out`
+   - Click "Save and Deploy"
+
+3. **Done!** Your site is live at `https://your-project.pages.dev`
+
+📖 **[Full Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**
+
+---
+
+## Local Development
 
 ### Installation
 
@@ -60,8 +86,9 @@ Open [http://localhost:3000](http://localhost:3000) to view the website.
 
 ```bash
 npm run build
-npm start
 ```
+
+This creates a static export in the `out/` directory.
 
 ## Technology Stack
 
