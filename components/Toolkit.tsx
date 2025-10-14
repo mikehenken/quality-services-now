@@ -9,25 +9,25 @@ export default function Toolkit() {
       icon: Droplets,
       title: "Professional Pressure Washers",
       description: "Adjustable high-grade equipment perfect for any surface type - from delicate siding to tough concrete",
-      image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+      image: "/service-images/toolkit-pressure-washer.jpg",
     },
     {
       icon: PaintBucket,
       title: "Premium Paint Systems",
       description: "Top-quality paints and application tools for flawless, long-lasting finishes",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80",
+      image: "/service-images/toolkit-paint-systems.jpg",
     },
     {
       icon: Sparkles,
       title: "Soft Wash Technology",
       description: "Low-pressure cleaning that's tough on dirt but gentle on your property",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80",
+      image: "/service-images/toolkit-soft-wash.jpg",
     },
     {
       icon: Wrench,
       title: "Specialized Equipment",
       description: "Extension poles, surface cleaners, and specialized nozzles for every job",
-      image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=80",
+      image: "/service-images/toolkit-specialized-equipment.jpg",
     },
   ];
 
@@ -63,9 +63,11 @@ export default function Toolkit() {
                 className="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
               >
                 <div className="relative h-64 overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
-                    style={{ backgroundImage: `url('${tool.image}')` }}
+                  <img
+                    src={tool.image}
+                    alt={tool.title}
+                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute bottom-6 left-6 flex items-center gap-4">

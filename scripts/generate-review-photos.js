@@ -9,7 +9,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const GOOGLE_API_KEY = 'GOOGLE_API_KEY_REMOVED';
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || '';
 
 // Review photo specifications
 const reviewPhotos = [

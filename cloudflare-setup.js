@@ -1,32 +1,35 @@
 const axios = require('axios');
 
 async function setupCloudflare() {
-  const ACCOUNT_ID = 'CLOUDFLARE_ACCOUNT_ID_REMOVED'; // From your Pages dashboard URL
+  const ACCOUNT_ID = process.env.CLOUDFLARE_ACCOUNT_ID || '';
+  const API_TOKEN = process.env.CLOUDFLARE_API_TOKEN || '';
+  const GLOBAL_API_KEY = process.env.CLOUDFLARE_GLOBAL_API_KEY || '';
+  const EMAIL = process.env.CLOUDFLARE_EMAIL || '';
 
   // Try different authentication approaches
   const AUTH_METHODS = [
     // API Token with Bearer auth
     {
       type: 'API_TOKEN_BEARER',
-      token: 'CLOUDFLARE_TOKEN_REMOVED',
-      auth: 'Bearer CLOUDFLARE_TOKEN_REMOVED'
+      token: API_TOKEN,
+      auth: `Bearer ${API_TOKEN}`
     },
     // Global API Key with Basic auth (email:key format)
     {
       type: 'GLOBAL_API_KEY',
-      email: 'EMAIL_REMOVED',
-      key: 'CLOUDFLARE_KEY_REMOVED',
-      auth: 'Basic ' + Buffer.from('EMAIL_REMOVED:CLOUDFLARE_KEY_REMOVED').toString('base64')
+      email: EMAIL,
+      key: GLOBAL_API_KEY,
+      auth: 'Basic ' + Buffer.from(`${EMAIL}:${GLOBAL_API_KEY}`).toString('base64')
     },
     // Try X-Auth-Key header format for Global API Key
     {
       type: 'GLOBAL_API_KEY_XAUTH',
-      email: 'EMAIL_REMOVED',
-      key: 'CLOUDFLARE_KEY_REMOVED',
-      auth: 'Bearer CLOUDFLARE_TOKEN_REMOVED', // Use API token as fallback
+      email: EMAIL,
+      key: GLOBAL_API_KEY,
+      auth: `Bearer ${API_TOKEN}`, // Use API token as fallback
       headers: {
-        'X-Auth-Key': 'CLOUDFLARE_KEY_REMOVED',
-        'X-Auth-Email': 'EMAIL_REMOVED'
+        'X-Auth-Key': GLOBAL_API_KEY,
+        'X-Auth-Email': EMAIL
       }
     }
   ];

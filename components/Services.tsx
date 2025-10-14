@@ -21,37 +21,37 @@ export default function Services() {
       icon: Droplets,
       title: "Pressure Washing",
       description: "Deep clean driveways, patios, decks, and siding with professional-grade equipment",
-      image: "https://images.unsplash.com/photo-1628744876497-eb30460be9f6?w=600&q=80",
+      image: "/service-images/service-pressure-washing.jpg",
     },
     {
       icon: Home,
       title: "House Washing",
       description: "Gentle soft-wash system that protects your siding while removing dirt and mildew",
-      image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
+      image: "/service-images/service-house-washing.jpg",
     },
     {
       icon: PaintBucket,
       title: "Exterior Painting",
       description: "Transform your home's curb appeal with professional painting services",
-      image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600&q=80",
+      image: "/service-images/service-exterior-painting.jpg",
     },
     {
       icon: Sparkles,
       title: "Interior Painting",
       description: "Refresh any room with expert interior painting and finishing",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80",
+      image: "/service-images/service-interior-painting.jpg",
     },
     {
       icon: Fence,
       title: "Fence & Deck Staining",
       description: "Protect and beautify your outdoor wood surfaces with quality stains",
-      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+      image: "/service-images/service-fence-deck-staining.jpg",
     },
     {
       icon: TreePine,
       title: "Concrete Cleaning",
       description: "Remove stubborn stains and restore your concrete surfaces to like-new condition",
-      image: "https://images.unsplash.com/photo-1615873968403-89e068629265?w=600&q=80",
+      image: "/service-images/service-concrete-cleaning.jpg",
     },
   ];
 
@@ -60,37 +60,37 @@ export default function Services() {
       icon: Building2,
       title: "Building Washing",
       description: "Keep your commercial property looking professional and inviting",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+      image: "/service-images/service-building-washing.jpg",
     },
     {
       icon: Warehouse,
       title: "Warehouse Cleaning",
       description: "Industrial-grade cleaning for warehouses and large facilities",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&q=80",
+      image: "/service-images/service-warehouse-cleaning.jpg",
     },
     {
       icon: Droplets,
       title: "Parking Lot Cleaning",
       description: "Pressure wash parking lots, walkways, and entry areas",
-      image: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&q=80",
+      image: "/service-images/service-parking-lot.jpg",
     },
     {
       icon: PaintBucket,
       title: "Commercial Painting",
       description: "Professional painting services for offices, retail spaces, and more",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+      image: "/service-images/service-commercial-painting.jpg",
     },
     {
       icon: Sparkles,
       title: "Storefront Restoration",
       description: "Revitalize your storefront to attract more customers",
-      image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=600&q=80",
+      image: "/service-images/service-storefront.jpg",
     },
     {
       icon: Home,
       title: "HOA Services",
       description: "Comprehensive cleaning and maintenance for HOA communities",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+      image: "/service-images/service-hoa.jpg",
     },
   ];
 
@@ -161,9 +161,11 @@ export default function Services() {
                   className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
                 >
                   <div className="relative h-48 overflow-hidden">
-                    <div
-                      className="absolute inset-0 bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"
-                      style={{ backgroundImage: `url('${service.image}')` }}
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-4 left-4">

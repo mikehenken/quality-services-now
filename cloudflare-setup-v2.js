@@ -2,9 +2,9 @@ const axios = require('axios');
 
 async function setupCloudflare() {
   const API_TOKENS = [
-    { key: 'CLOUDFLARE_ACCOUNT_TOKEN_REMOVED', name: 'Account Token' },
-    { key: 'CLOUDFLARE_ORIGINAL_TOKEN_REMOVED', name: 'Original Token' }
-  ];
+    { key: process.env.CLOUDFLARE_ACCOUNT_TOKEN || '', name: 'Account Token' },
+    { key: process.env.CLOUDFLARE_ORIGINAL_TOKEN || '', name: 'Original Token' }
+  ].filter(token => token.key); // Filter out empty tokens
   const API_BASE = 'https://api.cloudflare.com/client/v4';
 
   console.log('🔧 Setting up Cloudflare Pages - Testing multiple tokens...\n');

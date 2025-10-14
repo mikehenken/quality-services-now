@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function troubleshootCloudflare() {
-  const API_KEY = 'CLOUDFLARE_KEY_REMOVED'; // User's global API key
+  const API_KEY = process.env.CLOUDFLARE_API_KEY || '';
   const API_BASE = 'https://api.cloudflare.com/client/v4';
 
   console.log('🔍 Troubleshooting Cloudflare API access...\n');

@@ -28,14 +28,14 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "Best service I've had in years! They were thorough, careful with our landscaping, and cleaned up everything perfectly. The results speak for themselves.",
         type: "residential",
-        image: "/review-photos/lehigh-deandre.jpg"
+        image: "/review-photos/lehigh-deandre.webp"
       },
       {
         name: "Maria R.",
         rating: 5,
         text: "Our driveway and house look brand new! Professional crew, fair pricing, and amazing results. Highly recommend KD's to anyone in Lehigh Acres!",
         type: "residential",
-        image: "/review-photos/lehigh-maria.jpg"
+        image: "/review-photos/lehigh-maria.webp"
       }
     ]
   },
@@ -49,21 +49,21 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "KD's team did an amazing job pressure washing our driveway and house. It looks brand new! They were professional, on time, and the pricing was very fair.",
         type: "residential",
-        image: "/review-photos/fort-myers-marcus.jpg"
+        image: "/review-photos/fort-myers-marcus.webp"
       },
       {
         name: "Linda K.",
         rating: 5,
         text: "Transformed our office building exterior! The team was incredibly professional and the results exceeded our expectations. Worth every penny!",
         type: "commercial",
-        image: "/review-photos/fort-myers-linda.jpg"
+        image: "/review-photos/fort-myers-linda.webp"
       },
       {
         name: "Robert T.",
         rating: 5,
         text: "Outstanding work on our pool deck and patio. Years of buildup completely removed. They were careful, efficient, and the price was reasonable.",
         type: "residential",
-        image: "/review-photos/fort-myers-robert.jpg"
+        image: "/review-photos/fort-myers-robert.webp"
       }
     ]
   },
@@ -77,14 +77,14 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "We hired KD's for both exterior painting and pressure washing. The transformation is incredible! Our home's curb appeal has never been better.",
         type: "residential",
-        image: "/review-photos/naples-jasmine.jpg"
+        image: "/review-photos/naples-jasmine.webp"
       },
       {
         name: "Patricia M.",
         rating: 5,
         text: "Exceptional service from start to finish. Our luxury home needed detailed work and they delivered perfection. Highly professional team!",
         type: "residential",
-        image: "/review-photos/naples-patricia.jpg"
+        image: "/review-photos/naples-patricia.webp"
       }
     ]
   },
@@ -98,14 +98,14 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "KD's painted our entire house interior and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule.",
         type: "residential",
-        image: "/review-photos/estero-carlos.jpg"
+        image: "/review-photos/estero-carlos.webp"
       },
       {
         name: "Jennifer S.",
         rating: 5,
         text: "Our shopping plaza looks amazing after their pressure washing service. Professional, reliable, and great communication throughout the project!",
         type: "commercial",
-        image: "/review-photos/estero-jennifer.jpg"
+        image: "/review-photos/estero-jennifer.webp"
       }
     ]
   },
@@ -119,14 +119,14 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "Professional from start to finish. Free estimate was detailed and accurate. The crew was courteous and did exceptional work on our commercial building.",
         type: "commercial",
-        image: "/review-photos/bonita-springs-aaliyah.jpg"
+        image: "/review-photos/bonita-springs-aaliyah.webp"
       },
       {
         name: "Michael B.",
         rating: 5,
         text: "Amazing transformation of our home's exterior! The team was meticulous and the results are outstanding. Best decision we made this year!",
         type: "residential",
-        image: "/review-photos/bonita-springs-michael.jpg"
+        image: "/review-photos/bonita-springs-michael.webp"
       }
     ]
   },
@@ -140,14 +140,14 @@ const areaData: Record<string, AreaData> = {
         rating: 5,
         text: "Outstanding pressure washing service! Removed years of buildup from our patio and pool deck. They also cleaned our roof - looks amazing.",
         type: "residential",
-        image: "/review-photos/punta-gorda-tyrone.jpg"
+        image: "/review-photos/punta-gorda-tyrone.webp"
       },
       {
         name: "Susan L.",
         rating: 5,
         text: "Our waterfront property looks pristine! The team was respectful, efficient, and delivered results beyond our expectations. Highly recommend!",
         type: "residential",
-        image: "/review-photos/punta-gorda-susan.jpg"
+        image: "/review-photos/punta-gorda-susan.webp"
       }
     ]
   }
@@ -241,7 +241,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=1920&q=80')`,
+            backgroundImage: `url('/hero-bg.webp')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-600/60" />
@@ -347,6 +347,7 @@ export default function Hero() {
                                 src={review.image}
                                 alt={`${review.type} property`}
                                 className="w-full h-full object-cover"
+                                loading="lazy"
                               />
                             </div>
                             

@@ -57,14 +57,14 @@ export default function HowItWorks() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.2 }}
-                  className="relative"
+                  className="relative h-full"
                 >
                   {/* Connector Line */}
                   {index < steps.length - 1 && (
                     <div className="hidden md:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-primary-300 to-primary-200 -z-10" />
                   )}
 
-                  <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 relative">
+                  <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 relative h-full flex flex-col">
                     {/* Step Number */}
                     <div className="absolute -top-4 -right-4 bg-gradient-to-br from-accent-500 to-accent-600 text-white font-display font-bold text-2xl w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
                       {step.number}

@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function fixTokenPermissions() {
-  const GLOBAL_TOKEN = 'CLOUDFLARE_KEY_REMOVED'; // User's global API key
+  const GLOBAL_TOKEN = process.env.CLOUDFLARE_GLOBAL_TOKEN || '';
   const API_BASE = 'https://api.cloudflare.com/client/v4';
 
   console.log('🔧 Attempting to create a new API token with Pages permissions...\n');
