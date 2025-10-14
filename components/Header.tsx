@@ -44,7 +44,6 @@ export default function Header() {
               <div className="text-sm text-gray-600 flex items-center gap-1">
                 <MapPin className="w-3 h-3" />
                 <span>Lehigh Acres, FL</span>
-                <span className="ml-4 px-2 py-0.5 bg-green-100 text-green-800 rounded text-xs font-semibold">Black-Owned</span>
               </div>
             </div>
           </div>

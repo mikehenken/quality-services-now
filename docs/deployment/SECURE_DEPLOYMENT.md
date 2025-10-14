@@ -5,10 +5,10 @@ This guide covers the secure deployment process that includes API key leak detec
 ## Quick Start
 
 ```bash
-./deploy.sh
+v
 ```
 
-That's it! The script handles everything automatically with built-in security checks.
+That's it! The script handles everything automatically with built-in security checks.np
 
 ## What the Deploy Script Does
 
