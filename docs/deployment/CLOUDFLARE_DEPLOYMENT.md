@@ -75,9 +75,22 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 
 ---
 
-## Step 3: Custom Domain (Optional)
+## Step 3: Your Free Cloudflare Subdomain! 🎉
 
-To use your own domain (e.g., `kdspressurewashing.com`):
+**You're done!** Cloudflare automatically gives you a FREE subdomain:
+
+- **Your live URL:** `https://kds-pressure-washing.pages.dev`
+- **FREE SSL certificate** included
+- **Works immediately** - no setup needed
+- **No domain purchase required**
+
+This is a **real, permanent URL** you can use forever at no cost!
+
+---
+
+## Optional: Add Your Own Custom Domain Later
+
+**Only if you want to use your own domain** (like `kdspressurewashing.com`):
 
 1. In Cloudflare Pages dashboard, click on your project
 2. Go to **"Custom domains"** tab
@@ -86,7 +99,7 @@ To use your own domain (e.g., `kdspressurewashing.com`):
 5. Follow the DNS configuration instructions
 6. Wait for SSL certificate (usually takes 5-10 minutes)
 
-**Note:** You'll need to own the domain and manage its DNS through Cloudflare.
+**Note:** You'll need to own the domain and manage its DNS through Cloudflare. **This is completely optional** - the free `.pages.dev` subdomain works great!
 
 ---
 
@@ -127,8 +140,12 @@ Cloudflare will automatically:
 
 ## Viewing Your Site
 
-- **Production URL:** `https://your-project-name.pages.dev`
-- **Custom domain:** `https://yourdomain.com` (if configured)
+- **FREE Cloudflare Subdomain:** `https://kds-pressure-washing.pages.dev`
+  - This is your permanent URL - no domain purchase needed!
+  - Includes free SSL certificate
+  - Works immediately after deployment
+  
+- **Optional Custom Domain:** `https://yourdomain.com` (only if you bought a domain)
 
 ---
 

@@ -34,6 +34,12 @@ git push -u origin main
 
 Your site will be live at: `https://kds-pressure-washing.pages.dev`
 
+**This is a FREE permanent URL!** 
+- ✅ No domain purchase required
+- ✅ FREE SSL certificate included  
+- ✅ Works immediately
+- ✅ You can add a custom domain later (optional)
+
 ---
 
 ## Why Cloudflare Pages?

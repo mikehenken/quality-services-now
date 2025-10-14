@@ -60,7 +60,10 @@ Deploy to Cloudflare Pages in minutes - **completely free** with automatic deplo
      - Build output: `out`
    - Click "Save and Deploy"
 
-3. **Done!** Your site is live at `https://your-project.pages.dev`
+3. **Done!** Your site is live at `https://kds-pressure-washing.pages.dev`
+   - FREE permanent URL - no domain purchase needed!
+   - Includes SSL certificate (HTTPS)
+   - Add a custom domain later (optional)
 
 📖 **[Full Deployment Guide](docs/deployment/CLOUDFLARE_DEPLOYMENT.md)**
 

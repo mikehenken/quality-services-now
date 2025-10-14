@@ -103,11 +103,16 @@ Cloudflare automatically rebuilds and deploys in ~2 minutes! ⚡
 
 ---
 
-## 📍 Your Site URL
+## 📍 Your FREE Website URL
 
-After deployment, your site will be at:
-- **Default URL:** `https://kds-pressure-washing.pages.dev`
-- **Custom domain:** Configure in Cloudflare dashboard (optional)
+After deployment, your site will be live at:
+- **FREE Cloudflare subdomain:** `https://kds-pressure-washing.pages.dev`
+  - ✅ FREE forever - no domain purchase needed!
+  - ✅ Includes SSL certificate (HTTPS)
+  - ✅ Professional and shareable
+  - ✅ Works immediately
+  
+- **Custom domain (optional):** You can add your own domain later if you want (like `kdspressurewashing.com`), but it's completely optional!
 
 ---
 

@@ -20,6 +20,8 @@ Build output: out
 
 **Done!** Site live in 3 minutes at `https://kds-pressure-washing.pages.dev`
 
+**This is your FREE permanent URL - no domain purchase needed!**
+
 ---
 
 ### Option 2: Using Helper Script
