@@ -255,9 +255,6 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block bg-green-600/90 text-white px-4 py-2 rounded-full font-semibold text-sm mb-6 backdrop-blur-sm">
-              🤝 Proud Black-Owned Business
-            </div>
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
               Transform Your Property's{" "}
               <span className="text-accent-400">Appearance</span>

@@ -19,7 +19,7 @@ export default function WhyUs() {
     },
     {
       icon: Users,
-      title: "Black-Owned & Community-Focused",
+      title: "Community-Focused",
       description: "Supporting local entrepreneurs while delivering excellence and building lasting relationships in SWFL",
     },
     {
