@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Droplets,
-  PaintBucket,
+  Sparkles,
   Home,
   Building2,
-  Sparkles,
-  Fence,
-  TreePine,
-  Warehouse,
+  Shield,
+  Clock,
+  Users,
+  Trash2,
+  Zap,
 } from "lucide-react";
 
 export default function Services() {
@@ -37,79 +37,79 @@ export default function Services() {
 
   const residentialServicesBase = [
     {
-      icon: PaintBucket,
-      title: "Exterior Painting",
-      description: "Transform your home's curb appeal with professional painting services",
-      imagePath: "/service-images/service-exterior-painting.jpg",
-    },
-    {
-      icon: TreePine,
-      title: "Concrete Cleaning",
-      description: "Remove stubborn stains and restore your concrete surfaces to like-new condition",
-      imagePath: "/service-images/service-concrete-cleaning.jpg",
-    },
-    {
-      icon: Droplets,
-      title: "Pressure Washing",
-      description: "Deep clean driveways, patios, decks, and siding with professional-grade equipment",
-      imagePath: "/service-images/service-pressure-washing.jpg",
+      icon: Home,
+      title: "House Cleaning",
+      description: "Complete home cleaning services including kitchens, bathrooms, living areas, and bedrooms",
+      imagePath: "/cleaning-images/cleaning-house-cleaning.jpg",
     },
     {
       icon: Sparkles,
-      title: "Interior Painting",
-      description: "Refresh any room with expert interior painting and finishing",
-      imagePath: "/service-images/service-interior-painting.jpg",
+      title: "Deep Cleaning",
+      description: "Thorough deep cleaning for move-ins, move-outs, or seasonal cleaning needs",
+      imagePath: "/cleaning-images/cleaning-deep-cleaning.jpg",
     },
     {
-      icon: Home,
-      title: "House Washing",
-      description: "Gentle soft-wash system that protects your siding while removing dirt and mildew",
-      imagePath: "/service-images/service-house-washing.jpg",
+      icon: Shield,
+      title: "Window Cleaning",
+      description: "Professional window cleaning for crystal-clear views and spotless glass",
+      imagePath: "/cleaning-images/cleaning-window-cleaning.jpg",
     },
     {
-      icon: Fence,
-      title: "Fence & Deck Staining",
-      description: "Protect and beautify your outdoor wood surfaces with quality stains",
-      imagePath: "/service-images/service-fence-deck-staining.jpg",
+      icon: Clock,
+      title: "Carpet Cleaning",
+      description: "Deep carpet and upholstery cleaning to remove dirt, stains, and allergens",
+      imagePath: "/cleaning-images/cleaning-carpet-cleaning.jpg",
+    },
+    {
+      icon: Trash2,
+      title: "Post-Construction",
+      description: "Specialized cleaning after renovations, construction, or remodeling projects",
+      imagePath: "/cleaning-images/cleaning-post-construction.jpg",
+    },
+    {
+      icon: Zap,
+      title: "Move-In/Out",
+      description: "Comprehensive cleaning for new homes or preparing your old home for sale",
+      imagePath: "/cleaning-images/cleaning-move-in-out.jpg",
     },
   ];
 
   const commercialServicesBase = [
     {
       icon: Building2,
-      title: "Building Washing",
-      description: "Keep your commercial property looking professional and inviting",
-      imagePath: "/service-images/service-building-washing.jpg",
+      title: "Office Cleaning",
+      description: "Professional office cleaning services to maintain a clean, productive workspace",
+      imagePath: "/cleaning-images/cleaning-office-cleaning.jpg",
     },
     {
-      icon: Warehouse,
-      title: "Warehouse Cleaning",
-      description: "Industrial-grade cleaning for warehouses and large facilities",
-      imagePath: "/service-images/service-warehouse-cleaning.jpg",
+      icon: Users,
+      title: "Retail Cleaning",
+      description: "Store and retail space cleaning to keep your business looking its best",
+      imagePath: "/cleaning-images/cleaning-retail-cleaning.jpg",
     },
     {
-      icon: Droplets,
-      title: "Parking Lot Cleaning",
-      description: "Pressure wash parking lots, walkways, and entry areas",
-      imagePath: "/service-images/service-parking-lot.jpg",
+      icon: Shield,
+      title: "Medical Facility",
+      description: "Specialized cleaning for medical offices, clinics, and healthcare facilities",
+      imagePath: "/cleaning-images/cleaning-medical-cleaning.jpg",
     },
     {
-      icon: PaintBucket,
-      title: "Commercial Painting",
-      description: "Professional painting services for offices, retail spaces, and more",
-      imagePath: "/service-images/service-commercial-painting.jpg",
+      icon: Clock,
+      title: "Restaurant Cleaning",
+      description: "Deep cleaning services for restaurants, kitchens, and food service areas",
+      imagePath: "/cleaning-images/cleaning-restaurant-cleaning.jpg",
     },
     {
       icon: Sparkles,
-      title: "Storefront Restoration",
-      description: "Revitalize your storefront to attract more customers",
-      imagePath: "/service-images/service-storefront.jpg",
+      title: "Warehouse Cleaning",
+      description: "Industrial warehouse and facility cleaning for large commercial spaces",
+      imagePath: "/cleaning-images/cleaning-warehouse-cleaning.jpg",
     },
     {
-      icon: Home,
-      title: "HOA Services",
-      description: "Comprehensive cleaning and maintenance for HOA communities",
-      imagePath: "/service-images/service-hoa.jpg",
+      icon: Zap,
+      title: "School Cleaning",
+      description: "Educational facility cleaning for schools, universities, and learning centers",
+      imagePath: "/cleaning-images/cleaning-school-cleaning.jpg",
     },
   ];
 
@@ -136,10 +136,10 @@ export default function Services() {
           className="text-center mb-12"
         >
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 mb-4">
-            What <span className="text-primary-600">We Clean</span>
+            Our <span className="text-primary-600">Cleaning Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive cleaning and restoration services for every need
+            Professional cleaning services for homes and businesses across Southwest Florida
           </p>
         </motion.div>
 

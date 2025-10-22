@@ -18,6 +18,7 @@ export default function Header() {
   const navItems = [
     { label: "Services", href: "#services" },
     { label: "Why Us", href: "#why-us" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Reviews", href: "#reviews" },
     { label: "Contact", href: "#contact" },
   ];
@@ -35,15 +36,15 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="bg-gradient-to-br from-primary-600 to-primary-800 text-white font-display font-bold text-2xl md:text-3xl px-4 py-2 rounded-lg shadow-md">
-              KD's
+              QSN
             </div>
             <div className="hidden md:block">
               <div className="font-display font-bold text-gray-900 text-lg leading-tight">
-                Pressure Washing
+                Quality Services Now
               </div>
               <div className="text-sm text-gray-600 flex items-center gap-1">
                 <MapPin className="w-3 h-3" />
-                <span>Lehigh Acres, FL</span>
+                <span>Fort Myers, FL</span>
               </div>
             </div>
           </div>
@@ -64,11 +65,11 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+12396922083"
+              href="tel:+12396713894"
               className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-semibold">(239) 692-2083</span>
+              <span className="font-semibold">(239) 671-3894</span>
             </a>
             <a
               href="#estimate"
@@ -106,11 +107,11 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="tel:+12396922083"
+                href="tel:+12396713894"
                 className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 transition-colors py-2"
               >
                 <Phone className="w-5 h-5" />
-                <span className="font-semibold">(239) 692-2083</span>
+                <span className="font-semibold">(239) 671-3894</span>
               </a>
               <a
                 href="#estimate"

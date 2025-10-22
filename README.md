@@ -1,6 +1,6 @@
-# KD's Pressure Washing & Services
+# Quality Services Now
 
-A modern, professional marketing website for KD's Pressure Washing & Services, based in Lehigh Acres, FL.
+A modern, professional marketing website for Quality Services Now, a cleaning company based in Fort Myers, FL serving Southwest Florida.
 
 ## Features
 
@@ -16,26 +16,27 @@ A modern, professional marketing website for KD's Pressure Washing & Services, b
 ## Services Offered
 
 ### Residential
-- Pressure Washing
-- House Washing
-- Exterior Painting
-- Interior Painting
-- Fence & Deck Staining
-- Concrete Cleaning
+- House Cleaning
+- Deep Cleaning
+- Recurring Cleaning
+- One-Time Cleaning
+- Post-Construction Cleaning
+- Move-In/Out Cleaning
 
 ### Commercial
-- Building Washing
-- Warehouse Cleaning
-- Parking Lot Cleaning
-- Commercial Painting
-- Storefront Restoration
-- HOA Services
+- Office Cleaning
+- Retail Cleaning
+- Medical Facility Cleaning
+- Restaurant Cleaning
+- Event Cleaning
+- Industrial Cleaning
 
 ## Service Areas
 
-- Lehigh Acres, FL
 - Fort Myers, FL
 - Naples, FL
+- Lehigh Acres, FL
+- Marco Island, FL
 - Estero, FL
 - Bonita Springs, FL
 - Punta Gorda, FL
@@ -125,12 +126,12 @@ roe/
 
 ## Contact
 
-**KD's Pressure Washing & Services**
-- Phone: (239) 692-2083
-- Email: info@kdspressurewashing.com
-- Location: Lehigh Acres, FL
+**Quality Services Inc**
+- Phone: (239) 671-3894
+- Email: qualityservicesnik@gmail.com
+- Address: 4100 Evans Ave # 9, Fort Myers, FL 33901
 
 ---
 
-© 2024 KD's Pressure Washing & Services. All rights reserved.
+© 2024 Quality Services Now. All rights reserved.
 

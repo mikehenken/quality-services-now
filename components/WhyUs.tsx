@@ -14,27 +14,27 @@ export default function WhyUs() {
   const features = [
     {
       icon: Award,
-      title: "Industry-Leading Equipment",
-      description: "Professional-grade tools and techniques that deliver superior results every time",
+      title: "Professional Equipment",
+      description: "Commercial-grade cleaning tools and eco-friendly products that deliver superior results every time",
     },
     {
       icon: Users,
-      title: "Community-Focused",
-      description: "Supporting local entrepreneurs while delivering excellence and building lasting relationships in SWFL",
+      title: "Trusted Team",
+      description: "Background-checked, trained professionals who are reliable, courteous, and committed to excellence",
     },
     {
       icon: DollarSign,
-      title: "Free Estimates",
-      description: "No-risk, transparent pricing so you know exactly what to expect",
+      title: "Transparent Pricing",
+      description: "No hidden fees, upfront pricing so you know exactly what to expect",
     },
     {
       icon: Shield,
-      title: "Fully Insured & Licensed",
-      description: "Complete peace of mind with comprehensive insurance coverage",
+      title: "Fully Insured & Bonded",
+      description: "Complete peace of mind with comprehensive insurance and bonding coverage",
     },
     {
       icon: Sparkles,
-      title: "Quality Guaranteed",
+      title: "Satisfaction Guaranteed",
       description: "We stand behind our work with a 100% satisfaction guarantee",
     },
     {
@@ -58,7 +58,7 @@ export default function WhyUs() {
             What Sets Us <span className="text-primary-600">Apart</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Experience the KD's difference with our commitment to quality and customer service
+            Experience the Quality Services Now difference with our commitment to quality and customer service
           </p>
         </motion.div>
 

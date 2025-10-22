@@ -31,7 +31,7 @@ export default function EstimateForm() {
         },
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "",
-          subject: "New Estimate Request - KD's Pressure Washing",
+          subject: "New Estimate Request - Quality Services Now",
           from_name: formData.name,
           email: formData.email,
           phone: formData.phone,
@@ -117,10 +117,10 @@ export default function EstimateForm() {
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
                     <a
-                      href="tel:+12396922083"
+                      href="tel:+12396713894"
                       className="text-white/90 hover:text-white transition-colors text-lg"
                     >
-                      (239) 692-2083
+                      (239) 671-3894
                     </a>
                   </div>
                 </div>
@@ -132,10 +132,10 @@ export default function EstimateForm() {
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
                     <a
-                      href="mailto:info@kdspressurewashing.com"
+                      href="mailto:qualityservicesnik@gmail.com"
                       className="text-white/90 hover:text-white transition-colors"
                     >
-                      info@kdspressurewashing.com
+                      qualityservicesnik@gmail.com
                     </a>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function EstimateForm() {
                   <div>
                     <h4 className="font-semibold mb-1">Service Areas</h4>
                     <p className="text-white/90">
-                      Lehigh Acres, Fort Myers, Naples, Estero, Bonita Springs, Punta Gorda & surrounding SWFL areas
+                      Fort Myers, Naples, Lehigh Acres, Marco Island, Estero, Bonita Springs, Punta Gorda & surrounding SWFL areas
                     </p>
                   </div>
                 </div>
@@ -270,12 +270,13 @@ export default function EstimateForm() {
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-primary-500 focus:outline-none"
                     >
                       <option value="">Select a service...</option>
-                      <option value="pressure-washing">Pressure Washing</option>
-                      <option value="house-washing">House Washing</option>
-                      <option value="exterior-painting">Exterior Painting</option>
-                      <option value="interior-painting">Interior Painting</option>
-                      <option value="fence-staining">Fence & Deck Staining</option>
-                      <option value="commercial">Commercial Services</option>
+                      <option value="house-cleaning">House Cleaning</option>
+                      <option value="deep-cleaning">Deep Cleaning</option>
+                      <option value="recurring-cleaning">Recurring Cleaning</option>
+                      <option value="office-cleaning">Office Cleaning</option>
+                      <option value="post-construction">Post-Construction Cleaning</option>
+                      <option value="move-in-out">Move-In/Out Cleaning</option>
+                      <option value="commercial">Commercial Cleaning</option>
                       <option value="other">Other / Multiple Services</option>
                     </select>
                   </div>

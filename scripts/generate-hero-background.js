@@ -1,7 +1,7 @@
 /**
  * Generate Hero Background Image using Google Gemini API with Imagen
  * 
- * Creates a pressure washing hero background with 3 people in Ghostbusters-style pose
+ * Creates a cleaning company hero background with 3 women in professional cleaning pose
  */
 
 const axios = require('axios');
@@ -29,9 +29,9 @@ const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY || '';
 
 // Hero background image specification
 const heroImage = {
-  filename: 'hero-pressure-washing-team',
-  title: 'Pressure Washing Hero Background',
-  prompt: 'Professional team photo of 3 pressure washing workers in heroic pose similar to Ghostbusters movie poster. Three people standing side by side facing forward, confident and professional stance. Left side: Black male worker in his 30s, wearing clean work uniform, holding professional pressure washer wand. Center: Black male worker in his 20s, wearing work uniform, holding surface cleaner attachment. Right side: White male worker in his 30s, wearing work uniform, holding extension pole with brush attachment. All three workers looking directly at camera with confident, professional expressions. Background shows clean Florida residential property with palm trees, bright sunny day. High-quality professional photography, clean composition, team ready for work. All workers appear professional, clean, and confident. Wide shot showing full team and equipment.',
+  filename: 'hero-cleaning-team',
+  title: 'Cleaning Company Hero Background',
+  prompt: 'Professional team photo of 3 female cleaning professionals in confident, professional pose. Three women standing side by side facing forward, confident and professional stance. Left side: Black woman in her 30s, wearing clean white work uniform with company logo, holding professional microfiber mop and bucket. Center: Hispanic woman in her 20s, wearing work uniform, holding spray bottles and cleaning cloths. Right side: White woman in her 30s, wearing work uniform, holding vacuum cleaner and dusting tools. All three women looking directly at camera with confident, professional expressions. Background shows clean modern office or residential interior with bright lighting. High-quality professional photography, clean composition, team ready for work. All workers appear professional, clean, and confident. Wide shot showing full team and cleaning equipment including mops, buckets, spray bottles, vacuum, and cleaning supplies.',
 };
 
 /**
@@ -40,7 +40,7 @@ const heroImage = {
 async function generateHeroImage() {
   try {
     console.log('\n' + '='.repeat(70));
-    console.log('🚀 GENERATING PRESSURE WASHING HERO BACKGROUND');
+    console.log('🚀 GENERATING CLEANING COMPANY HERO BACKGROUND');
     console.log('='.repeat(70));
     
     if (!GOOGLE_API_KEY) {
@@ -114,8 +114,8 @@ async function generateHeroImage() {
         console.log('   - Homepage banner');
         console.log('   - Team showcase');
         console.log('\n📐 Dimensions: High resolution (wide format)');
-        console.log('👥 Features: 3-person team in professional pose');
-        console.log('🔧 Equipment: Pressure washing tools and gear');
+        console.log('👥 Features: 3-woman team in professional pose');
+        console.log('🧽 Equipment: Cleaning supplies and tools');
       } else {
         console.error('\n❌ No image data found in API response');
         console.log('Response structure:', JSON.stringify(response.data, null, 2));
@@ -146,7 +146,7 @@ async function generateHeroImage() {
 async function generateHeroImageWithPollinations() {
   try {
     console.log('\n' + '='.repeat(70));
-    console.log('🚀 GENERATING HERO BACKGROUND (Pollinations.ai)');
+    console.log('🚀 GENERATING CLEANING COMPANY HERO BACKGROUND (Pollinations.ai)');
     console.log('='.repeat(70));
     
     console.log(`\n🎨 Generating: ${heroImage.title}`);
@@ -181,8 +181,8 @@ async function generateHeroImageWithPollinations() {
     console.log('   - Homepage banner');
     console.log('   - Team showcase');
     console.log('\n📐 Dimensions: 1920x1080 (Full HD)');
-    console.log('👥 Features: 3-person team in professional pose');
-    console.log('🔧 Equipment: Pressure washing tools and gear');
+    console.log('👥 Features: 3-woman team in professional pose');
+    console.log('🧽 Equipment: Cleaning supplies and tools');
     
   } catch (error) {
     console.error('\n❌ Error generating hero image:', error.message);
@@ -191,7 +191,7 @@ async function generateHeroImageWithPollinations() {
 
 // Main execution
 async function main() {
-  console.log('🎨 PRESSURE WASHING HERO BACKGROUND GENERATOR');
+  console.log('🎨 CLEANING COMPANY HERO BACKGROUND GENERATOR');
   console.log('='.repeat(70));
   
   // Force use of Pollinations.ai due to Gemini API rate limits

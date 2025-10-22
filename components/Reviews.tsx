@@ -12,37 +12,37 @@ export default function Reviews() {
       name: "Marcus J.",
       location: "Fort Myers, FL",
       rating: 5,
-      text: "KD's team did an amazing job pressure washing our driveway and house. It looks brand new! They were professional, on time, and the pricing was very fair. Highly recommend!",
+      text: "Quality Services Now did an amazing job cleaning our home. It looks brand new! They were professional, on time, and the pricing was very fair. Highly recommend!",
     },
     {
       name: "Jasmine W.",
       location: "Naples, FL",
       rating: 5,
-      text: "We hired KD's for both exterior painting and pressure washing. The transformation is incredible! Our home's curb appeal has never been better. Great attention to detail.",
+      text: "We hired Quality Services Now for both residential and commercial cleaning. The transformation is incredible! Our home has never been cleaner. Great attention to detail.",
     },
     {
       name: "DeAndre L.",
       location: "Lehigh Acres, FL",
       rating: 5,
-      text: "Best service I've had in years! They were thorough, careful with our landscaping, and cleaned up everything perfectly. The results speak for themselves. Will definitely use them again.",
+      text: "Best cleaning service I've had in years! They were thorough, careful with our belongings, and cleaned up everything perfectly. The results speak for themselves. Will definitely use them again.",
     },
     {
       name: "Aaliyah T.",
       location: "Bonita Springs, FL",
       rating: 5,
-      text: "Professional from start to finish. Free estimate was detailed and accurate. The crew was courteous and did exceptional work on our commercial building. Very impressed!",
+      text: "Professional from start to finish. Free estimate was detailed and accurate. The crew was courteous and did exceptional work on our office building. Very impressed!",
     },
     {
       name: "Carlos M.",
       location: "Estero, FL",
       rating: 5,
-      text: "KD's painted our entire house interior and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule. Worth every penny!",
+      text: "Quality Services Now cleaned our entire house and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule. Worth every penny!",
     },
     {
       name: "Tyrone K.",
       location: "Punta Gorda, FL",
       rating: 5,
-      text: "Outstanding pressure washing service! Removed years of buildup from our patio and pool deck. They also cleaned our roof - looks amazing. Couldn't be happier with the results.",
+      text: "Outstanding cleaning service! Removed years of buildup from our home. They also cleaned our entire property - looks amazing. Couldn't be happier with the results.",
     },
   ];
 

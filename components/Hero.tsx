@@ -26,14 +26,14 @@ const areaData: Record<string, AreaData> = {
       {
         name: "DeAndre L.",
         rating: 5,
-        text: "Best service I've had in years! They were thorough, careful with our landscaping, and cleaned up everything perfectly. The results speak for themselves.",
+        text: "Best cleaning service I've had in years! They were thorough, careful with our belongings, and cleaned up everything perfectly. The results speak for themselves.",
         type: "residential",
         image: "/review-photos/lehigh-deandre.webp"
       },
       {
         name: "Maria R.",
         rating: 5,
-        text: "Our driveway and house look brand new! Professional crew, fair pricing, and amazing results. Highly recommend KD's to anyone in Lehigh Acres!",
+        text: "Our home looks brand new! Professional crew, fair pricing, and amazing results. Highly recommend Quality Services Now to anyone in Lehigh Acres!",
         type: "residential",
         image: "/review-photos/lehigh-maria.webp"
       }
@@ -47,21 +47,21 @@ const areaData: Record<string, AreaData> = {
       {
         name: "Marcus J.",
         rating: 5,
-        text: "KD's team did an amazing job pressure washing our driveway and house. It looks brand new! They were professional, on time, and the pricing was very fair.",
+        text: "Quality Services Now did an amazing job cleaning our home. It looks brand new! They were professional, on time, and the pricing was very fair.",
         type: "residential",
         image: "/review-photos/fort-myers-marcus.webp"
       },
       {
         name: "Linda K.",
         rating: 5,
-        text: "Transformed our office building exterior! The team was incredibly professional and the results exceeded our expectations. Worth every penny!",
+        text: "Transformed our office building! The team was incredibly professional and the results exceeded our expectations. Worth every penny!",
         type: "commercial",
         image: "/review-photos/fort-myers-linda.webp"
       },
       {
         name: "Robert T.",
         rating: 5,
-        text: "Outstanding work on our pool deck and patio. Years of buildup completely removed. They were careful, efficient, and the price was reasonable.",
+        text: "Outstanding work on our home. Years of buildup completely removed. They were careful, efficient, and the price was reasonable.",
         type: "residential",
         image: "/review-photos/fort-myers-robert.webp"
       }
@@ -75,7 +75,7 @@ const areaData: Record<string, AreaData> = {
       {
         name: "Jasmine W.",
         rating: 5,
-        text: "We hired KD's for both exterior painting and pressure washing. The transformation is incredible! Our home's curb appeal has never been better.",
+        text: "We hired Quality Services Now for both residential and commercial cleaning. The transformation is incredible! Our home has never been cleaner.",
         type: "residential",
         image: "/review-photos/naples-jasmine.webp"
       },
@@ -96,14 +96,14 @@ const areaData: Record<string, AreaData> = {
       {
         name: "Carlos M.",
         rating: 5,
-        text: "KD's painted our entire house interior and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule.",
+        text: "Quality Services Now cleaned our entire house and it looks stunning! They protected all our furniture, cleaned up daily, and finished on schedule.",
         type: "residential",
         image: "/review-photos/estero-carlos.webp"
       },
       {
         name: "Jennifer S.",
         rating: 5,
-        text: "Our shopping plaza looks amazing after their pressure washing service. Professional, reliable, and great communication throughout the project!",
+        text: "Our shopping plaza looks amazing after their cleaning service. Professional, reliable, and great communication throughout the project!",
         type: "commercial",
         image: "/review-photos/estero-jennifer.webp"
       }
@@ -124,7 +124,7 @@ const areaData: Record<string, AreaData> = {
       {
         name: "Michael B.",
         rating: 5,
-        text: "Amazing transformation of our home's exterior! The team was meticulous and the results are outstanding. Best decision we made this year!",
+        text: "Amazing transformation of our home! The team was meticulous and the results are outstanding. Best decision we made this year!",
         type: "residential",
         image: "/review-photos/bonita-springs-michael.webp"
       }
@@ -138,7 +138,7 @@ const areaData: Record<string, AreaData> = {
       {
         name: "Tyrone K.",
         rating: 5,
-        text: "Outstanding pressure washing service! Removed years of buildup from our patio and pool deck. They also cleaned our roof - looks amazing.",
+        text: "Outstanding cleaning service! Removed years of buildup from our home. They also cleaned our entire property - looks amazing.",
         type: "residential",
         image: "/review-photos/punta-gorda-tyrone.webp"
       },
@@ -241,7 +241,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/hero-bg.webp')`,
+            backgroundImage: `url('/images/hero-cleaning-team.jpg')`,
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/70 to-primary-600/60" />
@@ -256,11 +256,11 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
-              Transform Your Property's{" "}
-              <span className="text-accent-400">Appearance</span>
+              Professional Cleaning{" "}
+              <span className="text-accent-400">Services</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/95 mb-8 max-w-2xl mx-auto">
-              Professional pressure washing, painting, and restoration services for homes and businesses across SWFL
+              Quality cleaning services for homes and businesses across Southwest Florida - Fort Myers, Naples, Lehigh Acres, and more
             </p>
           </motion.div>
 
@@ -294,7 +294,7 @@ export default function Hero() {
               </button>
             </form>
             <p className="text-sm text-gray-600 mt-4">
-              Serving: Lehigh Acres • Fort Myers • Naples • Estero • Bonita Springs • Punta Gorda
+              Serving: Fort Myers • Naples • Lehigh Acres • Marco Island • Estero • Bonita Springs • Punta Gorda
             </p>
             
             {/* Area Details Slide-In */}
@@ -432,11 +432,11 @@ export default function Hero() {
               Get Free Estimate
             </a>
             <a
-              href="tel:+12396922083"
+              href="tel:+12396713894"
               className="bg-white text-primary-700 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 justify-center w-full sm:w-auto"
             >
               <Phone className="w-5 h-5" />
-              <span>(239) 692-2083</span>
+              <span>(239) 671-3894</span>
             </a>
           </motion.div>
         </div>

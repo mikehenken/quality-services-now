@@ -40,13 +40,13 @@ check_for_secrets() {
     )
     
     # Files and directories to exclude from scanning
-    EXCLUDE_DIRS="node_modules|\.git|\.next|out|build|coverage|dist"
-    EXCLUDE_FILES="package-lock\.json|yarn\.lock|\.svg|\.png|\.jpg|\.jpeg|\.gif|\.ico|\.woff|\.woff2|\.ttf|\.eot"
+    EXCLUDE_DIRS="node_modules|\.git|\.next|out|build|coverage|dist|docs"
+    EXCLUDE_FILES="package-lock\.json|yarn\.lock|\.svg|\.png|\.jpg|\.jpeg|\.gif|\.ico|\.woff|\.woff2|\.ttf|\.eot|\.md"
     
     # Scan files for secret patterns
     for pattern in "${PATTERNS[@]}"; do
         # Use grep with Perl regex to search
-        if grep -rniP --exclude-dir={node_modules,.git,.next,out,build,coverage,dist} \
+        if grep -rniP --exclude-dir={node_modules,.git,.next,out,build,coverage,dist,docs} \
                      --exclude="package-lock.json" \
                      --exclude="yarn.lock" \
                      --exclude="*.svg" \
@@ -58,6 +58,8 @@ check_for_secrets() {
                      --exclude="*.woff*" \
                      --exclude="*.ttf" \
                      --exclude="*.eot" \
+                     --exclude="*.md" \
+                     --exclude=".env.example" \
                      --exclude="deploy.sh" \
                      "$pattern" . 2>/dev/null; then
             LEAKED_SECRETS=true

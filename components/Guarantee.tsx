@@ -22,8 +22,8 @@ export default function Guarantee() {
             Our 100% Satisfaction Guarantee
           </h2>
           <p className="text-xl text-white/95 mb-8 leading-relaxed">
-            If you are ever dissatisfied with any area of our service, simply let us know{" "}
-            <strong>within 48 hours</strong> and we will re-clean or re-paint at no additional
+            If you are ever dissatisfied with any area of our cleaning service, simply let us know{" "}
+            <strong>within 48 hours</strong> and we will re-clean at no additional
             charge. Your satisfaction is our top priority.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">

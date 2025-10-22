@@ -10,21 +10,21 @@ export default function HowItWorks() {
       number: "01",
       title: "Schedule Your Free Estimate",
       description:
-        "Contact us and we'll visit your property to assess the work and provide a detailed, no-obligation quote.",
+        "Contact us and we'll visit your space to assess your cleaning needs and provide a detailed, no-obligation quote.",
     },
     {
       icon: ClipboardCheck,
       number: "02",
       title: "Book Your Service",
       description:
-        "Choose a convenient time that works for you. We'll arrive on schedule, fully equipped and ready to work.",
+        "Choose a convenient time that works for you. We'll arrive on schedule, fully equipped with professional cleaning supplies and ready to work.",
     },
     {
       icon: Sparkles,
       number: "03",
       title: "Enjoy the Results",
       description:
-        "We'll complete a thorough walk-through with you to ensure everything meets our high standards and your expectations.",
+        "We'll complete a thorough walk-through with you to ensure every area meets our high cleaning standards and your expectations.",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function HowItWorks() {
             How It <span className="text-primary-600">Works</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Three simple steps to transform your property
+            Three simple steps to get your space professionally cleaned
           </p>
         </motion.div>
 

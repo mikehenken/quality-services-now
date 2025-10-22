@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Wrench, Droplets, PaintBucket, Sparkles } from "lucide-react";
+import { Wrench, Sparkles, Shield, Zap } from "lucide-react";
 
 export default function Toolkit() {
   const [imageVersion, setImageVersion] = useState("current");
@@ -27,28 +27,28 @@ export default function Toolkit() {
 
   const toolsBase = [
     {
-      icon: PaintBucket,
-      title: "Premium Paint Systems",
-      description: "Top-quality paints and application tools for flawless, long-lasting finishes",
-      imagePath: "/service-images/toolkit-paint-systems.jpg",
+      icon: Sparkles,
+      title: "Green Cleaning Products",
+      description: "Eco-friendly, hospital-grade disinfectants and cleaning solutions for safe, effective results",
+      imagePath: "/cleaning-images/cleaning-green-cleaning.jpg",
     },
     {
-      icon: Droplets,
-      title: "Professional Pressure Washers",
-      description: "Adjustable high-grade equipment perfect for any surface type - from delicate siding to tough concrete",
-      imagePath: "/service-images/toolkit-pressure-washer.jpg",
+      icon: Shield,
+      title: "Disaster Restoration",
+      description: "Professional restoration equipment for water damage, fire damage, and emergency cleanup",
+      imagePath: "/cleaning-images/cleaning-disaster-restoration.jpg",
     },
     {
       icon: Wrench,
-      title: "Specialized Equipment",
-      description: "Extension poles, surface cleaners, and specialized nozzles for every job",
-      imagePath: "/service-images/toolkit-specialized-equipment.jpg",
+      title: "Event Cleaning",
+      description: "Specialized equipment for pre and post-event cleaning for conferences, weddings, and special occasions",
+      imagePath: "/cleaning-images/cleaning-holiday-cleaning.jpg",
     },
     {
-      icon: Sparkles,
-      title: "Soft Wash Technology",
-      description: "Low-pressure cleaning that's tough on dirt but gentle on your property",
-      imagePath: "/service-images/toolkit-soft-wash.jpg",
+      icon: Zap,
+      title: "Maintenance Cleaning",
+      description: "Regular maintenance cleaning equipment for consistent, professional results",
+      imagePath: "/cleaning-images/cleaning-regular-maintenance.jpg",
     },
   ];
 
@@ -69,11 +69,11 @@ export default function Toolkit() {
         >
           <p className="text-accent-600 font-semibold text-lg mb-2">OUR TOOLKIT</p>
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 mb-4">
-            How We Tackle Your{" "}
-            <span className="text-primary-600">Toughest Jobs</span>
+            Professional{" "}
+            <span className="text-primary-600">Cleaning Equipment</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Cutting-edge tools and products for exceptional results
+            State-of-the-art tools and eco-friendly products for superior cleaning results
           </p>
         </motion.div>
 
