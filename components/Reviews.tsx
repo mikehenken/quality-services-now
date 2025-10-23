@@ -7,6 +7,7 @@ import { Star, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 export default function Reviews() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Original hardcoded reviews (GMB integration disabled)
   const reviews = [
     {
       name: "Marcus J.",
@@ -46,6 +47,9 @@ export default function Reviews() {
     },
   ];
 
+  const averageRating = 4.9;
+  const totalReviews = reviews.length;
+
   const nextReview = () => {
     setCurrentIndex((prev) => (prev + 1) % reviews.length);
   };
@@ -57,96 +61,103 @@ export default function Reviews() {
   return (
     <section id="reviews" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <p className="text-accent-600 font-semibold text-lg mb-2">OUR REVIEWS</p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 mb-4">
-            Don't Take Our <span className="text-primary-600">Word for It</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            What Our Customers Say
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-accent-500 text-accent-500" />
-              ))}
-            </div>
-            <span className="text-2xl font-bold text-gray-900">4.9</span>
-            <span className="text-gray-600">({reviews.length}+ reviews)</span>
-          </div>
-        </motion.div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Don't just take our word for it - hear from our satisfied customers
+            across Southwest Florida
+          </p>
+        </div>
 
         <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center mb-4">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-8 h-8 text-yellow-400 fill-current"
+                  />
+                ))}
+              </div>
+              <span className="ml-3 text-2xl font-bold text-gray-900">
+                {averageRating}
+              </span>
+            </div>
+            <p className="text-gray-600">
+              Based on {totalReviews} customer reviews
+            </p>
+          </div>
+
           <div className="relative">
-            {/* Review Cards */}
-            <div className="overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentIndex}
-                  initial={{ opacity: 0, x: 100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -100 }}
-                  transition={{ duration: 0.3 }}
-                  className="bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 rounded-2xl shadow-xl border-2 border-gray-100"
-                >
-                  <div className="flex mb-4">
-                    {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-6 h-6 fill-accent-500 text-accent-500"
-                      />
-                    ))}
-                  </div>
-                  <p className="text-xl text-gray-700 leading-relaxed mb-6 italic">
-                    "{reviews[currentIndex].text}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <div className="bg-gradient-to-br from-primary-600 to-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.3 }}
+                className="bg-gray-50 rounded-2xl p-8 shadow-lg"
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
                       {reviews[currentIndex].name.charAt(0)}
                     </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900">
-                        {reviews[currentIndex].name}
-                      </h4>
-                      <p className="text-gray-600 flex items-center gap-1">
-                        <MapPin className="w-4 h-4" />
-                        {reviews[currentIndex].location}
-                      </p>
-                    </div>
                   </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
+                  <div className="flex-1">
+                    <div className="flex items-center mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900">
+                        {reviews[currentIndex].name}
+                      </h3>
+                      <div className="flex ml-2">
+                        {[...Array(reviews[currentIndex].rating)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-5 h-5 text-yellow-400 fill-current"
+                          />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex items-center text-gray-600 mb-3">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      <span>{reviews[currentIndex].location}</span>
+                    </div>
+                    <p className="text-gray-700 text-lg leading-relaxed">
+                      "{reviews[currentIndex].text}"
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
 
-            {/* Navigation Buttons */}
-            <div className="flex justify-center gap-4 mt-8">
+            <div className="flex justify-center mt-8 space-x-4">
               <button
                 onClick={prevReview}
-                className="bg-white border-2 border-gray-200 text-gray-700 p-3 rounded-full hover:border-primary-500 hover:text-primary-600 transition-all shadow-md hover:shadow-lg"
+                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:bg-gray-50"
                 aria-label="Previous review"
               >
-                <ChevronLeft className="w-6 h-6" />
+                <ChevronLeft className="w-6 h-6 text-gray-600" />
               </button>
               <button
                 onClick={nextReview}
-                className="bg-white border-2 border-gray-200 text-gray-700 p-3 rounded-full hover:border-primary-500 hover:text-primary-600 transition-all shadow-md hover:shadow-lg"
+                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 hover:bg-gray-50"
                 aria-label="Next review"
               >
-                <ChevronRight className="w-6 h-6" />
+                <ChevronRight className="w-6 h-6 text-gray-600" />
               </button>
             </div>
 
-            {/* Dots Indicator */}
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center mt-6 space-x-2">
               {reviews.map((_, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
                     index === currentIndex
-                      ? "bg-primary-600 w-8"
+                      ? "bg-blue-600"
                       : "bg-gray-300 hover:bg-gray-400"
                   }`}
                   aria-label={`Go to review ${index + 1}`}
@@ -159,4 +170,3 @@ export default function Reviews() {
     </section>
   );
 }
-

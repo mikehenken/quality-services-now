@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -38,15 +38,6 @@ export default function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 p-2 rounded-lg hover:bg-primary-600 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
             </div>
           </div>
 
@@ -66,12 +57,17 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Office Cleaning
+                  Window Cleaning
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Recurring Cleaning
+                  Rental & AirBnB Cleaning
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="hover:text-white transition-colors">
+                  Office Cleaning
                 </a>
               </li>
               <li>

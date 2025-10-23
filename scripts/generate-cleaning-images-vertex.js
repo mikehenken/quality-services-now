@@ -46,9 +46,9 @@ const cleaningServiceImages = [
     negativePrompt: 'professional photography, stock photo, studio lighting, perfect composition, overly sharp, artificial, staged, posed, looking at camera, clean clothes, shiny skin',
   },
   {
-    filename: 'cleaning-carpet-cleaning',
-    title: 'Carpet Cleaning',
-    prompt: 'Candid photo of a Black male carpet cleaner operating professional carpet cleaning equipment in Florida home, shot from side angle. Worker in slightly damp work uniform, focused on operating machine not looking at camera, hair tied back, showing signs of physical work. Residential living room with palm trees visible through window, natural indoor lighting. Authentic carpet cleaning work in progress, professional equipment, real cleaning job.',
+    filename: 'cleaning-rental-airbnb-cleaning',
+    title: 'Rental & AirBnB Cleaning',
+    prompt: 'Candid photo of a Black female cleaner preparing a rental property for new guests in Florida home, shot from side angle. Worker in slightly damp work uniform, focused on cleaning and organizing not looking at camera, hair tied back, showing signs of physical work. Residential living room with palm trees visible through window, natural indoor lighting. Authentic rental property turnover cleaning work in progress, professional equipment, real cleaning job.',
     negativePrompt: 'professional photography, stock photo, studio lighting, perfect composition, overly sharp, artificial, staged, posed, looking at camera, clean clothes, shiny skin',
   },
   {

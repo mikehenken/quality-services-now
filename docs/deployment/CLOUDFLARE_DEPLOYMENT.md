@@ -2,7 +2,7 @@
 
 ## 🚀 One-Click Deployment to Cloudflare Pages (FREE)
 
-This guide will help you deploy KD's Pressure Washing & Services website to Cloudflare Pages for **FREE** with automatic deployments on every git push.
+This guide will help you deploy Quality Services Now website to Cloudflare Pages for **FREE** with automatic deployments on every git push.
 
 ---
 
@@ -20,20 +20,20 @@ This guide will help you deploy KD's Pressure Washing & Services website to Clou
 If you have GitHub CLI installed:
 
 ```bash
-gh repo create kds-pressure-washing --public --source=. --remote=origin --push
+gh repo create quality-services-now --public --source=. --remote=origin --push
 ```
 
 ### Option B: Using GitHub Website
 
 1. Go to [GitHub](https://github.com/new)
-2. Create a new repository named `kds-pressure-washing`
+2. Create a new repository named `quality-services-now`
 3. **Do NOT** initialize with README (we already have one)
 4. Click "Create repository"
 5. Run these commands in your terminal:
 
 ```bash
 cd /home/mikeh/Projects/roe
-git remote add origin https://github.com/YOUR_USERNAME/kds-pressure-washing.git
+git remote add origin https://github.com/YOUR_USERNAME/quality-services-now.git
 git push -u origin main
 ```
 
@@ -52,7 +52,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 2. **Connect GitHub**
    - Click **"Connect to Git"**
    - Authorize Cloudflare to access your GitHub account
-   - Select the `kds-pressure-washing` repository
+   - Select the `quality-services-now` repository
 
 3. **Configure Build Settings**
    
@@ -60,7 +60,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
    
    | Setting | Value |
    |---------|-------|
-   | **Project name** | `kds-pressure-washing` (or your choice) |
+   | **Project name** | `quality-services-now` (or your choice) |
    | **Production branch** | `main` |
    | **Framework preset** | `Next.js (Static HTML Export)` |
    | **Build command** | `npm run build` |
@@ -77,7 +77,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 4. **Deploy!**
    - Click **"Save and Deploy"**
    - Wait 2-3 minutes for the build to complete ☕
-   - Your site will be live at `https://kds-pressure-washing.pages.dev`
+   - Your site will be live at `https://quality-services-now.pages.dev`
 
 ---
 
@@ -85,7 +85,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 
 **You're done!** Cloudflare automatically gives you a FREE subdomain:
 
-- **Your live URL:** `https://kds-pressure-washing.pages.dev`
+- **Your live URL:** `https://quality-services-now.pages.dev`
 - **FREE SSL certificate** included
 - **Works immediately** - no setup needed
 - **No domain purchase required**
@@ -96,7 +96,7 @@ This is a **real, permanent URL** you can use forever at no cost!
 
 ## Optional: Add Your Own Custom Domain Later
 
-**Only if you want to use your own domain** (like `kdspressurewashing.com`):
+**Only if you want to use your own domain** (like `qualityservicesnow.com`):
 
 1. In Cloudflare Pages dashboard, click on your project
 2. Go to **"Custom domains"** tab
@@ -146,7 +146,7 @@ Cloudflare will automatically:
 
 ## Viewing Your Site
 
-- **FREE Cloudflare Subdomain:** `https://kds-pressure-washing.pages.dev`
+- **FREE Cloudflare Subdomain:** `https://quality-services-now.pages.dev`
   - This is your permanent URL - no domain purchase needed!
   - Includes free SSL certificate
   - Works immediately after deployment
@@ -185,7 +185,7 @@ If the build fails, check:
 
 1. **Get your FREE Web3Forms API key:**
    - Go to https://web3forms.com
-   - Enter your email: `EMAIL_REMOVED`
+   - Enter your company email: `qualityservicesnik@gmail.com`
    - Click "Get Access Key"
    - Check your email and copy the key
 
@@ -203,7 +203,7 @@ If the build fails, check:
    - Click "Retry deployment" on the latest deployment
    - Wait 2-3 minutes
 
-**Done!** All contact form submissions will now be sent to `EMAIL_REMOVED`
+**Done!** All contact form submissions will now be sent to `qualityservicesnik@gmail.com`
 
 📖 **[Full Email Setup Guide](../setup/EMAIL_SETUP.md)**
 

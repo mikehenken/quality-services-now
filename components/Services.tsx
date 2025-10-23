@@ -31,8 +31,8 @@ export default function Services() {
     if (imageVersion === "current") {
       return basePath;
     }
-    // For versioned images: /service-images/v1/service-pressure-washing.jpg
-    return basePath.replace("/service-images/", `/service-images/${imageVersion}/`);
+    // For versioned images: /cleaning-images/v1/cleaning-house-cleaning.jpg
+    return basePath.replace("/cleaning-images/", `/cleaning-images/${imageVersion}/`);
   };
 
   const residentialServicesBase = [
@@ -56,9 +56,9 @@ export default function Services() {
     },
     {
       icon: Clock,
-      title: "Carpet Cleaning",
-      description: "Deep carpet and upholstery cleaning to remove dirt, stains, and allergens",
-      imagePath: "/cleaning-images/cleaning-carpet-cleaning.jpg",
+      title: "Rental & AirBnB Cleaning",
+      description: "Specialized cleaning for rental properties and AirBnB turnovers between guests",
+      imagePath: "/cleaning-images/cleaning-rental-airbnb-cleaning.jpg",
     },
     {
       icon: Trash2,

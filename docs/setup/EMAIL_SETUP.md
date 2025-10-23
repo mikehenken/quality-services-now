@@ -7,14 +7,14 @@ The contact form uses **Web3Forms** - a completely FREE service that sends form 
 ### Step 1: Get Your FREE API Key
 
 1. Go to https://web3forms.com
-2. Enter your email address
+2. Enter your company email address: **qualityservicesnik@gmail.com**
 3. Click "Get Access Key"
 4. Check your email and copy the access key
 
 ### Step 2: Add to Cloudflare Pages
 
 1. Go to your Cloudflare Pages dashboard
-2. Select your site (kds-pressure-washing or whatever you named it)
+2. Select your site (quality-services-now or whatever you named it)
 3. Go to **Settings** → **Environment variables**
 4. Click **Add variable**
    - Name: `NEXT_PUBLIC_WEB3FORMS_KEY`
@@ -27,7 +27,21 @@ If your site is already live:
 1. Go to **Deployments** tab
 2. Click "Retry deployment" on the latest deployment
 
-**That's it!** All form submissions will now be sent to your email address
+**That's it!** All form submissions will now be sent to `qualityservicesnik@gmail.com`
+
+## Important Notes
+
+⚠️ **API Key Configuration**: The Web3Forms API key must be created using the company email address (`qualityservicesnik@gmail.com`). If you get an error "This method is not allowed", the API key may need to be regenerated with the correct email address.
+
+### If You Need to Regenerate the API Key:
+
+1. Go to https://web3forms.com
+2. Enter the company email: `qualityservicesnik@gmail.com`
+3. Click "Get Access Key" 
+4. Check the email inbox for `qualityservicesnik@gmail.com`
+5. Copy the new access key
+6. Update the environment variable in Cloudflare Pages
+7. Redeploy the site
 
 ---
 

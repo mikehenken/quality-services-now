@@ -156,9 +156,9 @@ export default function EstimateForm() {
               <div className="mt-12 pt-8 border-t border-white/20">
                 <h4 className="font-semibold mb-3">Business Hours</h4>
                 <div className="space-y-2 text-white/90">
-                  <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
-                  <p>Saturday: 8:00 AM - 4:00 PM</p>
-                  <p>Sunday: Closed</p>
+                  <p>Monday - Friday: 7:00 AM - 7:00 PM</p>
+                  <p>Saturday: 7:00 AM - 7:00 PM</p>
+                  <p>Sunday: 7:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </motion.div>
@@ -272,10 +272,11 @@ export default function EstimateForm() {
                       <option value="">Select a service...</option>
                       <option value="house-cleaning">House Cleaning</option>
                       <option value="deep-cleaning">Deep Cleaning</option>
-                      <option value="recurring-cleaning">Recurring Cleaning</option>
-                      <option value="office-cleaning">Office Cleaning</option>
+                      <option value="window-cleaning">Window Cleaning</option>
+                      <option value="rental-airbnb-cleaning">Rental & AirBnB Cleaning</option>
                       <option value="post-construction">Post-Construction Cleaning</option>
                       <option value="move-in-out">Move-In/Out Cleaning</option>
+                      <option value="office-cleaning">Office Cleaning</option>
                       <option value="commercial">Commercial Cleaning</option>
                       <option value="other">Other / Multiple Services</option>
                     </select>

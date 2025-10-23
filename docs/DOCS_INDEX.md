@@ -1,6 +1,6 @@
 # 📚 Documentation Index
 
-Welcome to the KD's Pressure Washing & Services documentation. This index organizes all project documentation for easy navigation.
+Welcome to the Quality Services Now documentation. This index organizes all project documentation for easy navigation.
 
 ## 🚀 Quick Start
 
@@ -18,6 +18,7 @@ Welcome to the KD's Pressure Washing & Services documentation. This index organi
 - **[QUICK_START.md](setup/QUICK_START.md)** - Fast deployment in 3 steps
 - **[DEPLOYMENT.md](setup/DEPLOYMENT.md)** - Alternative deployment methods
 - **[EMAIL_SETUP.md](setup/EMAIL_SETUP.md)** - Web3Forms email setup
+- **[WEB3FORMS_TROUBLESHOOTING.md](setup/WEB3FORMS_TROUBLESHOOTING.md)** - Fix email configuration issues
 - **[GEMINI_IMAGE_SETUP.md](guides/GEMINI_IMAGE_SETUP.md)** - Google AI image generation setup
 
 ### 🔧 Development & Workflow

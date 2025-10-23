@@ -1,0 +1,104 @@
+
+> quality-services-now@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3000
+  - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 1921ms
+   Reload env: .env
+Error: Cannot find module '../lib/picocolors'
+Require stack:
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at DevServer.<anonymous> (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js:805:67)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js:104:24
+    at async invokeRender (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+Error: Cannot find module '../lib/picocolors'
+Require stack:
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at DevServer.<anonymous> (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js:805:67)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js:104:24 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+Error: Cannot find module '../lib/picocolors'
+Require stack:
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at DevServer.<anonymous> (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js:805:67)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js:104:24 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+Error: Cannot find module '../lib/picocolors'
+Require stack:
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js
+- /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at mod.require (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at DevServer.<anonymous> (/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js:805:67)
+    at /home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js:104:24 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/dev/next-dev-server.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/next.js',
+    '/home/mikeh/Projects/cleaning-v2/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+[?25h

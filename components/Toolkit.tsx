@@ -21,8 +21,8 @@ export default function Toolkit() {
     if (imageVersion === "current") {
       return basePath;
     }
-    // For versioned images: /service-images/v1/toolkit-pressure-washer.jpg
-    return basePath.replace("/service-images/", `/service-images/${imageVersion}/`);
+    // For versioned images: /cleaning-images/v1/cleaning-green-cleaning.jpg
+    return basePath.replace("/cleaning-images/", `/cleaning-images/${imageVersion}/`);
   };
 
   const toolsBase = [

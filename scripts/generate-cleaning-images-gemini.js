@@ -46,9 +46,9 @@ const cleaningServiceImages = [
     prompt: 'Natural candid smartphone photo of a Black woman window cleaner working on residential windows in Florida, shot from ground level. Worker on ladder cleaning exterior windows, wearing work clothes with slight dampness from cleaning solution, focused on work not looking at camera, hair tied back. Single-story Florida home with palm trees, bright sunny day. Worker showing signs of real work - slight perspiration, authentic window cleaning in progress, natural outdoor lighting.',
   },
   {
-    filename: 'cleaning-carpet-cleaning',
-    title: 'Carpet Cleaning',
-    prompt: 'Candid photo of a Black male carpet cleaner operating professional carpet cleaning equipment in Florida home, shot from side angle. Worker in slightly damp work uniform, focused on operating machine not looking at camera, hair tied back, showing signs of physical work. Residential living room with palm trees visible through window, natural indoor lighting. Authentic carpet cleaning work in progress, professional equipment, real cleaning job.',
+    filename: 'cleaning-rental-airbnb-cleaning',
+    title: 'Rental & AirBnB Cleaning',
+    prompt: 'Candid photo of a Black female cleaner preparing a rental property for new guests in Florida home, shot from side angle. Worker in slightly damp work uniform, focused on cleaning and organizing not looking at camera, hair tied back, showing signs of physical work. Residential living room with palm trees visible through window, natural indoor lighting. Authentic rental property turnover cleaning work in progress, professional equipment, real cleaning job.',
   },
   {
     filename: 'cleaning-post-construction',

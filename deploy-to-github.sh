@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Deploy to GitHub Script for KD's Pressure Washing & Services
+# Deploy to GitHub Script for Quality Services Now
 # This script helps you push your code to GitHub for Cloudflare Pages deployment
 
-echo "🚀 KD's Pressure Washing - GitHub Deployment Script"
+echo "🚀 Quality Services Now - GitHub Deployment Script"
 echo "=================================================="
 echo ""
 
@@ -23,7 +23,7 @@ else
     echo "📝 No GitHub remote found. Let's set one up!"
     echo ""
     echo "Please enter your GitHub repository URL:"
-    echo "Example: https://github.com/username/kds-pressure-washing.git"
+    echo "Example: https://github.com/username/quality-services-now.git"
     read -p "Repository URL: " REPO_URL
     
     if [ -z "$REPO_URL" ]; then

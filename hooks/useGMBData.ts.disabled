@@ -1,0 +1,60 @@
+import { useState, useEffect } from 'react';
+
+interface GMBReview {
+  name: string;
+  rating: number;
+  text: string;
+  publishTime: string;
+  reviewer: {
+    displayName: string;
+    profilePhotoUrl?: string;
+  };
+}
+
+interface GMBData {
+  location: {
+    name: string;
+    address: string;
+    phoneNumber?: string;
+    websiteUri?: string;
+  };
+  insights: {
+    averageRating: number;
+    totalReviewCount: number;
+    recentReviews: GMBReview[];
+  };
+  photos: Array<{
+    name: string;
+    photoUri: string;
+  }>;
+}
+
+export function useGMBData() {
+  const [gmbData, setGmbData] = useState<GMBData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchGMBData = async () => {
+      try {
+        const response = await fetch('/api/gmb-data');
+        const result = await response.json();
+        
+        if (result.success) {
+          setGmbData(result.data);
+        } else {
+          setError(result.message || 'Failed to fetch business data');
+        }
+      } catch (err) {
+        console.error('Error fetching GMB data:', err);
+        setError('Failed to fetch business data');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGMBData();
+  }, []);
+
+  return { gmbData, loading, error };
+}

@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Search, MapPin, Phone, Star, Building2, Home } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+// GMB integration disabled
 
 interface AreaData {
   name: string;
@@ -157,6 +158,8 @@ export default function Hero() {
   const [zipCode, setZipCode] = useState("");
   const [selectedArea, setSelectedArea] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  
+  // GMB integration disabled - using original area data
 
   const detectArea = (input: string): string | null => {
     const lowerInput = input.toLowerCase().trim();

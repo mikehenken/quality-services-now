@@ -126,10 +126,11 @@ roe/
 
 ## Contact
 
-**Quality Services Inc**
+**Quality Services Now**
 - Phone: (239) 671-3894
 - Email: qualityservicesnik@gmail.com
 - Address: 4100 Evans Ave # 9, Fort Myers, FL 33901
+- **Lead Form**: All contact form submissions are sent to qualityservicesnik@gmail.com
 
 ---
 

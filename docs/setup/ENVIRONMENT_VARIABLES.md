@@ -43,7 +43,7 @@ NEXT_PUBLIC_WEB3FORMS_KEY=your_web3forms_key_here
 
 **Setup:**
 1. Go to https://web3forms.com
-2. Enter your email address
+2. Enter your company email address: `qualityservicesnik@gmail.com`
 3. Get your access key from email
 4. Add to `.env` file
 
@@ -224,7 +224,7 @@ GOOGLE_API_KEY=AIzaSy...your-key-here
 CLOUDFLARE_ACCOUNT_ID=1234567890abcdef
 CLOUDFLARE_API_TOKEN=token_here
 CLOUDFLARE_EMAIL=you@example.com
-CONTACT_EMAIL=contact@yourbusiness.com
+CONTACT_EMAIL=qualityservicesnik@gmail.com
 
 # Optional for development
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
