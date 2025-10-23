@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed output: 'export' to allow API routes
+  // Static export for Cloudflare Pages deployment
+  output: 'export',
   images: {
     unoptimized: true,
     formats: ['image/webp'],
