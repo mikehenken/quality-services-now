@@ -60,7 +60,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
    
    | Setting | Value |
    |---------|-------|
-   | **Project name** | `quality-services-now` (or your choice) |
+   | **Project name** | `quality-services-now-site` (or your choice) |
    | **Production branch** | `main` |
    | **Framework preset** | `Next.js (Static HTML Export)` |
    | **Build command** | `npm run build` |
@@ -77,7 +77,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 4. **Deploy!**
    - Click **"Save and Deploy"**
    - Wait 2-3 minutes for the build to complete ☕
-   - Your site will be live at `https://quality-services-now.pages.dev`
+   - Your site will be live at `https://quality-services-now-site.pages.dev`
 
 ---
 
@@ -85,7 +85,7 @@ Replace `YOUR_USERNAME` with your actual GitHub username.
 
 **You're done!** Cloudflare automatically gives you a FREE subdomain:
 
-- **Your live URL:** `https://quality-services-now.pages.dev`
+- **Your live URL:** `https://quality-services-now-site.pages.dev`
 - **FREE SSL certificate** included
 - **Works immediately** - no setup needed
 - **No domain purchase required**
@@ -146,7 +146,7 @@ Cloudflare will automatically:
 
 ## Viewing Your Site
 
-- **FREE Cloudflare Subdomain:** `https://quality-services-now.pages.dev`
+- **FREE Cloudflare Subdomain:** `https://quality-services-now-site.pages.dev`
   - This is your permanent URL - no domain purchase needed!
   - Includes free SSL certificate
   - Works immediately after deployment

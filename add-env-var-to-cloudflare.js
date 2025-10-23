@@ -17,7 +17,7 @@ async function addEnvironmentVariable() {
 
     console.log('\n🔧 Manual Steps (since I need your login):');
     console.log('1. Go to: https://dash.cloudflare.com/pages');
-    console.log('2. Select your project (kds-pressure-washing)');
+    console.log('2. Select your project (quality-services-now-site)');
     console.log('3. Go to Settings → Environment variables');
     console.log('4. Click "Add variable"');
     console.log('   - Name: NEXT_PUBLIC_WEB3FORMS_KEY');

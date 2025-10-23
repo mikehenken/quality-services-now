@@ -14,7 +14,7 @@ The contact form uses **Web3Forms** - a completely FREE service that sends form 
 ### Step 2: Add to Cloudflare Pages
 
 1. Go to your Cloudflare Pages dashboard
-2. Select your site (quality-services-now or whatever you named it)
+2. Select your site (quality-services-now-site or whatever you named it)
 3. Go to **Settings** → **Environment variables**
 4. Click **Add variable**
    - Name: `NEXT_PUBLIC_WEB3FORMS_KEY`

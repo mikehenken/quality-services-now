@@ -67,8 +67,8 @@ async function setupCloudflare() {
         continue;
       }
 
-      // Find the kds-pressure-washing project or use the first one
-      let project = projectsResponse.data.result.find(p => p.name === 'kds-pressure-washing') || projectsResponse.data.result[0];
+      // Find the quality-services-now-site project or use the first one
+      let project = projectsResponse.data.result.find(p => p.name === 'quality-services-now-site') || projectsResponse.data.result[0];
 
       console.log(`✅ Found project: ${project.name} (${project.id})`);
 

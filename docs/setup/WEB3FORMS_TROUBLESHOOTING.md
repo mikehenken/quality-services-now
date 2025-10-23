@@ -19,7 +19,7 @@ If you're getting this error, it means the Web3Forms API key needs to be regener
 ### 2. Update Cloudflare Pages
 
 1. **Go to Cloudflare Pages Dashboard**: https://dash.cloudflare.com/pages
-2. **Select Your Project**: Find your site (quality-services-now or similar)
+2. **Select Your Project**: Find your site (quality-services-now-site or similar)
 3. **Navigate to Settings**: Settings → Environment variables
 4. **Update the Variable**:
    - Find `NEXT_PUBLIC_WEB3FORMS_KEY`

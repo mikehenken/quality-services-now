@@ -58,7 +58,7 @@ async function setupCloudflare() {
       });
 
       // Find or use first project
-      let project = projectsResponse.data.result.find(p => p.name === 'kds-pressure-washing') || projectsResponse.data.result[0];
+      let project = projectsResponse.data.result.find(p => p.name === 'quality-services-now-site') || projectsResponse.data.result[0];
       console.log(`\n🎯 Using project: ${project.name}`);
 
       // Try to set environment variable
